@@ -3,9 +3,9 @@
 import Foundation
 import UIKit
 
-public class  CellForRowAtIndex {
+open class  CellForRowAtIndex {
     static let sharedInstance = CellForRowAtIndex()
-    let defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    let defaults : UserDefaults = UserDefaults.standard
     
     var first = 0
     var second  = 0
@@ -16,7 +16,7 @@ public class  CellForRowAtIndex {
     var votes = EmoteRating()
     var totalComentsCount = 0
     
-    func returnEmoticonCell(cell : EmoticonCell) -> EmoticonCell{
+    func returnEmoticonCell(_ cell : EmoticonCell) -> EmoticonCell{
         
         
         
@@ -30,20 +30,20 @@ public class  CellForRowAtIndex {
             cell.fifthEmoticonImageHeight.constant = 0
             cell.sixthEmoticonImageHeight.constant = 0
         }
-        if let selected = self.defaults.objectForKey("\(Global.article_id)") as? String {
+        if let selected = self.defaults.object(forKey: "\(Global.article_id)") as? String {
             switch "\(selected)" {
             case "1":
-                cell.firstEmoticonLabel.textColor = UIColor.redColor()
+                cell.firstEmoticonLabel.textColor = UIColor.red
             case "2":
-                cell.secondEmoticonLabel.textColor = UIColor.redColor()
+                cell.secondEmoticonLabel.textColor = UIColor.red
             case "3":
-                cell.thirdEmoticonLabel.textColor = UIColor.redColor()
+                cell.thirdEmoticonLabel.textColor = UIColor.red
             case "4":
-                cell.fourthEmoticonLabel.textColor = UIColor.redColor()
+                cell.fourthEmoticonLabel.textColor = UIColor.red
             case "5":
-                cell.fifthEmoticonLabel.textColor = UIColor.redColor()
+                cell.fifthEmoticonLabel.textColor = UIColor.red
             case "6":
-                cell.sixthEmoticonLabel.textColor = UIColor.redColor()
+                cell.sixthEmoticonLabel.textColor = UIColor.red
             default:
                 break
             }
@@ -73,12 +73,12 @@ public class  CellForRowAtIndex {
             cell.countFifthEmoticonLabel.text = "\(fifth)" ?? "0"
             cell.countSixthEmoticonLabel.text = "\(sixth)" ?? "0"
             
-            cell.firstEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercentage(votes, element: votes.first))%" ?? "0%"
-            cell.secondEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercentage(votes, element: votes.second))%" ?? "0%"
-            cell.thirdEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercentage(votes, element: votes.third))%" ?? "0%"
-            cell.fourthEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercentage(votes, element: votes.fourth))%" ?? "0%"
-            cell.fifthEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercentage(votes, element: votes.fifth))%" ?? "0%"
-            cell.sixthEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercentage(votes, element: votes.sixth))%" ?? "0%"
+            cell.firstEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercent(votes.first, second: votes.second, thirt: votes.third, fourth: votes.fourth, fifth: votes.fifth, sixt: votes.sixth, element: votes.first))%" ?? "0%"
+            cell.secondEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercent(votes.first, second: votes.second, thirt: votes.third, fourth: votes.fourth, fifth: votes.fifth, sixt: votes.sixth, element: votes.second))%" ?? "0%"
+            cell.thirdEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercent(votes.first, second: votes.second, thirt: votes.third, fourth: votes.fourth, fifth: votes.fifth, sixt: votes.sixth, element: votes.third))%" ?? "0%"
+            cell.fourthEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercent(votes.first, second: votes.second, thirt: votes.third, fourth: votes.fourth, fifth: votes.fifth, sixt: votes.sixth, element: votes.fourth))%" ?? "0%"
+            cell.fifthEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercent(votes.first, second: votes.second, thirt: votes.third, fourth: votes.fourth, fifth: votes.fifth, sixt: votes.sixth, element: votes.fifth))%" ?? "0%"
+            cell.sixthEmoticonLabel.text = "\(PrivetFunctions.sharedInstance.setRatePercent(votes.first, second: votes.second, thirt: votes.third, fourth: votes.fourth, fifth: votes.fifth, sixt: votes.sixth, element: votes.sixth))%" ?? "0%"
             
         }
         
@@ -86,120 +86,131 @@ public class  CellForRowAtIndex {
         
     }
     
-    func returnCommentCell(cell : CommentCell ,comment : GetCommentsFeed , date : NSDate ,newComment : String ,newName : String ) -> CommentCell {
+    func returnCommentCell(_ cell : CommentCell ,comment : GetCommentsFeed , date : Date ,newComment : String ,newName : String ) -> CommentCell {
         cell.imageLeftCostraint.constant = CGFloat(Global.leftConstrainCommentSize)
         cell.totalCountLeftConstraint.constant = CGFloat(Global.leftConstrainCommentSize)
         cell.upvoteButtonLeftConstraint.constant = CGFloat(Global.leftConstrainCommentSize)
         cell.initialsLabelLeftConstraints.constant = CGFloat(Global.leftConstrainCommentSize)
         
-        cell.userNameLabel.textColor = UIColor.blueColor()
+        cell.userNameLabel.textColor = UIColor.blue
         cell.commentLabel.text = newComment
         cell.userNameLabel.text = newName
-        cell.dateLabel.text = TimeAgo.sharedInstance.timeAgoSinceDate(date, numericDates: true)
+        cell.dateLabel.text = TimeAgo.sharedInstance.timeAgoSinceDate(date: date as NSDate, numericDates: true)
         cell.countLabel.text = String(comment.user_points!)
-        if comment.up_votes > 0 {
+        if comment.up_votes! > 0 {
             cell.upvoteCountLabel.text = String(comment.up_votes!)
-            cell.upvoteCountLabel.hidden = false
+            cell.upvoteCountLabel.isHidden = false
         } else {
-            cell.upvoteCountLabel.hidden = true
+            cell.upvoteCountLabel.isHidden = true
         }
-        if comment.down_votes > 0 {
+        if comment.down_votes! > 0 {
             cell.downvoteCountLabel.text  = String(comment.down_votes!)
-            cell.downvoteCountLabel.hidden = false
+            cell.downvoteCountLabel.isHidden = false
         } else {
-            cell.downvoteCountLabel.hidden = true
+            cell.downvoteCountLabel.isHidden = true
         }
-        if comment.replies > 0 {
+        if comment.replies! > 0 {
             cell.replyCount.text  = String(comment.replies!)
-            cell.showReply.hidden = false
-            cell.replyCount.hidden = false
+            cell.showReply.isHidden = false
+            cell.replyCount.isHidden = false
             cell.showButtonWidth.constant = 40
         } else {
             cell.showButtonWidth.constant = 0
-            cell.showReply.hidden = true
-            cell.replyCount.hidden = true
+            cell.showReply.isHidden = true
+            cell.replyCount.isHidden = true
         }
         if comment.avatar_url != Global.defaultImageUrl && comment.avatar_url != ""  {
             cell.imageForCell = comment.avatar_url
-            cell.InitialsLabel.hidden = true
-            cell.userImage.hidden = false
+            cell.InitialsLabel.isHidden = true
+            cell.userImage.isHidden = false
         } else if comment.avatar_url == ""{
-            cell.userImage.hidden = true
-            cell.InitialsLabel.hidden = false
+            cell.userImage.isHidden = true
+            cell.InitialsLabel.isHidden = false
             cell.InitialsLabel.text = PrivetFunctions.sharedInstance.searchUpperChracters(PrivetFunctions.sharedInstance.decodingString(comment.name!))
         }else {
-            cell.userImage.hidden = true
-            cell.InitialsLabel.hidden = false
+            cell.userImage.isHidden = true
+            cell.InitialsLabel.isHidden = false
             cell.InitialsLabel.text = PrivetFunctions.sharedInstance.searchUpperChracters(PrivetFunctions.sharedInstance.decodingString(comment.name!))
         }
         
         return cell
     }
     
-    func returnReplyCell (cell : CommentCell ,comment : GetCommentsFeed , date : NSDate ,newComment : String ,newName : String ) -> CommentCell {
+    func returnReplyCell (_ cell : CommentCell ,comment : GetCommentsFeed , date : Date ,newComment : String ,newName : String ) -> CommentCell {
         cell.imageLeftCostraint.constant = CGFloat(Global.leftConstrainReplySize)
         cell.totalCountLeftConstraint.constant = CGFloat(Global.leftConstrainReplySize)
         cell.upvoteButtonLeftConstraint.constant = CGFloat(Global.leftConstrainReplySize)
         cell.initialsLabelLeftConstraints.constant = CGFloat(Global.leftConstrainReplySize)
         
-        cell.userNameLabel.textColor = UIColor.blueColor()
+        cell.userNameLabel.textColor = UIColor.blue
         cell.commentLabel.text = newComment
         cell.userNameLabel.text = newName
-        if comment.up_votes > 0 {
+        if comment.up_votes! > 0 {
             cell.upvoteCountLabel.text = String(comment.up_votes!)
-            cell.upvoteCountLabel.hidden = false
+            cell.upvoteCountLabel.isHidden = false
         } else {
-            cell.upvoteCountLabel.hidden = true
+            cell.upvoteCountLabel.isHidden = true
         }
-        if comment.down_votes > 0 {
+        if comment.down_votes! > 0 {
             cell.downvoteCountLabel.text  = String(comment.down_votes!)
-            cell.downvoteCountLabel.hidden = false
+            cell.downvoteCountLabel.isHidden = false
         } else {
-            cell.downvoteCountLabel.hidden = true
+            cell.downvoteCountLabel.isHidden = true
         }
-        if comment.replies > 0 {
+        if comment.replies! > 0 {
             cell.replyCount.text  = String(comment.replies!)
-            cell.showReply.hidden = false
-            cell.replyCount.hidden = false
+            cell.showReply.isHidden = false
+            cell.replyCount.isHidden = false
             cell.showButtonWidth.constant = 40
         } else {
             cell.showButtonWidth.constant = 0
-            cell.showReply.hidden = true
-            cell.replyCount.hidden = true
+            cell.showReply.isHidden = true
+            cell.replyCount.isHidden = true
         }
-        cell.dateLabel.text = TimeAgo.sharedInstance.timeAgoSinceDate(date, numericDates: true)
+        cell.dateLabel.text = TimeAgo.sharedInstance.timeAgoSinceDate(date: date as NSDate, numericDates: true)
         cell.countLabel.text = String(comment.user_points!)
         if comment.avatar_url != Global.defaultImageUrl && comment.avatar_url != ""  {
             cell.imageForCell = comment.avatar_url
-            cell.InitialsLabel.hidden = true
-            cell.userImage.hidden = false
+            cell.InitialsLabel.isHidden = true
+            cell.userImage.isHidden = false
         } else if comment.avatar_url == ""{
-            cell.userImage.hidden = true
-            cell.InitialsLabel.hidden = false
+            cell.userImage.isHidden = true
+            cell.InitialsLabel.isHidden = false
             cell.InitialsLabel.text = PrivetFunctions.sharedInstance.searchUpperChracters(PrivetFunctions.sharedInstance.decodingString(comment.name!))
         } else {
-            cell.userImage.hidden = true
-            cell.InitialsLabel.hidden = false
+            cell.userImage.isHidden = true
+            cell.InitialsLabel.isHidden = false
             cell.InitialsLabel.text = PrivetFunctions.sharedInstance.searchUpperChracters(PrivetFunctions.sharedInstance.decodingString(comment.name!))
         }
         return cell
     }
     
-    func returnAddCommentCellForComment(cell : AddCommentCell) -> AddCommentCell{
-        if self.defaults.objectForKey("email") as? String != nil {
-            cell.emailTextField.text = self.defaults.objectForKey("email") as? String
-            cell.emailTextField.enabled = false
-            cell.logOut.hidden = false
-        } else{
-            cell.logOut.hidden = true
-            cell.emailTextField.enabled = true
-        }
-        if self.defaults.objectForKey("name") as? String != nil {
-            cell.nameTextField.text = self.defaults.objectForKey("name") as? String
-            cell.nameTextField.enabled = false
+    func returnAddCommentCellForComment(_ cell : AddCommentCell) -> AddCommentCell{
+        
+        
+        if self.defaults.object(forKey: "name") as? String != nil {
+            cell.nameTextField.text = self.defaults.object(forKey: "name") as? String
+            cell.nameTextField.isEnabled = false
+            cell.nameTextField.isSelected = false
+            cell.logOut.isHidden = false
         } else {
-            cell.nameTextField.enabled = true
+            cell.logOut.isHidden = true
+            cell.nameTextField.isEnabled = true
+            cell.nameTextField.isSelected = true
         }
+        
+        if self.defaults.object(forKey: "email") as? String != nil {
+            cell.emailTextField.text = self.defaults.object(forKey: "email") as? String
+            cell.emailTextField.isEnabled = false
+            cell.emailTextField.isSelected = false
+            cell.logOut.isHidden = false
+        } else{
+            cell.logOut.isHidden = true
+            cell.emailTextField.isEnabled = true
+            cell.emailTextField.isSelected = true
+        }
+
+        
         if totalComentsCount > 1 {
             cell.totalCount.text = "Total comments: \(totalComentsCount)"
         } else if totalComentsCount == 0 {
@@ -214,87 +225,87 @@ public class  CellForRowAtIndex {
         return cell
     }
     
-    func returnAddCommentCellForReply(cell : AddCommentCell , object : AddReply) -> AddCommentCell{
+    func returnAddCommentCellForReply(_ cell : AddCommentCell , object : AddReply) -> AddCommentCell{
         
         cell.totalCountHeight.constant = 0
         cell.logOutButtonHeight.constant = 0
         cell.leftConstrainSize.constant = 8
-        cell.logOut.hidden = true
-        if let lname = self.defaults.objectForKey("name") as? String {
+        cell.logOut.isHidden = true
+        if let lname = self.defaults.object(forKey: "name") as? String {
             cell.nameTextField.text = lname
-            cell.nameTextField.enabled = false
-        } else if self.defaults.objectForKey("name") == nil{
+            cell.nameTextField.isEnabled = false
+        } else if self.defaults.object(forKey: "name") == nil{
             cell.nameTextField.text = ""
-            cell.nameTextField.enabled = true
+            cell.nameTextField.isEnabled = true
         }
-        if let lemail = self.defaults.objectForKey("email") as? String {
+        if let lemail = self.defaults.object(forKey: "email") as? String {
             cell.emailTextField.text = lemail
-            cell.logOut.hidden = true
-            cell.emailTextField.enabled = false
-        } else if self.defaults.objectForKey("email") == nil {
+            cell.logOut.isHidden = true
+            cell.emailTextField.isEnabled = false
+        } else if self.defaults.object(forKey: "email") == nil {
             cell.emailTextField.text = ""
-            cell.logOut.hidden = true
-            cell.emailTextField.enabled = true
+            cell.logOut.isHidden = true
+            cell.emailTextField.isEnabled = true
         }
         return cell
     }
     
-    func returnLoadMoreCell(cell : LoadMoreCell ,object : LoadMore) -> LoadMoreCell{
+    func returnLoadMoreCell(_ cell : LoadMoreCell ,object : LoadMore) -> LoadMoreCell{
         let loadMoreCell = cell
         if object.showLoadMoreButton == true {
             loadMoreCell.heightButton.constant = 30
             loadMoreCell.heightActivitiIndicator.constant = 37
-            loadMoreCell.activityIndicator.hidden = true
-            loadMoreCell.loadMore.hidden = false
+            loadMoreCell.activityIndicator.isHidden = true
+            loadMoreCell.loadMore.isHidden = false
         } else {
             loadMoreCell.heightButton.constant = 0
             loadMoreCell.heightActivitiIndicator.constant = 0
-            loadMoreCell.loadMore.hidden = true
-            loadMoreCell.activityIndicator.hidden = true
+            loadMoreCell.loadMore.isHidden = true
+            loadMoreCell.activityIndicator.isHidden = true
         }
         return loadMoreCell
     }
-
     
-    func returnCellForRow(object : AnyObject , tableView : UITableView) -> UITableViewCell{
+    
+    func returnCellForRow(_ object : AnyObject , tableView : UITableView) -> UITableViewCell{
         var cell = UITableViewCell()
         if object is LoadMore {
             let objectForcell : LoadMore = object as! LoadMore
-            var cell = tableView.dequeueReusableCellWithIdentifier("LoadMoreCell") as! LoadMoreCell
+            var cell = tableView.dequeueReusableCell(withIdentifier: "LoadMoreCell") as! LoadMoreCell
             cell = returnLoadMoreCell(cell, object: objectForcell)
             return cell
         } else if object is AddComment {
-            var cell = tableView.dequeueReusableCellWithIdentifier("AddCommentCell") as! AddCommentCell
+            var cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell") as! AddCommentCell
             cell = returnAddCommentCellForComment(cell)
             return cell
         } else if object is Emoticon {
-            var cell = tableView.dequeueReusableCellWithIdentifier("EmoticonCell") as! EmoticonCell
+            var cell = tableView.dequeueReusableCell(withIdentifier: "EmoticonCell") as! EmoticonCell
             cell = returnEmoticonCell(cell)
             return cell
         } else if object is AddReply {
             let objectForcell : AddReply = object as! AddReply
-            var cell = tableView.dequeueReusableCellWithIdentifier("AddCommentCell") as! AddCommentCell
+            var cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell") as! AddCommentCell
             cell = returnAddCommentCellForReply(cell, object: objectForcell)
             return cell
         } else if object is WebView {
             let objectForcell : WebView = object as! WebView
             if objectForcell.advertisingBanner == true {
-               let  cell = tableView.dequeueReusableCellWithIdentifier("WebViewCell") as! WebViewCell
+                let  cell = tableView.dequeueReusableCell(withIdentifier: "WebViewCell") as! WebViewCell
                 return cell
             } else {
-               let cell = tableView.dequeueReusableCellWithIdentifier("ContentWebViewCell") as! ContentWebViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ContentWebViewCell") as! ContentWebViewCell
                 return cell
             }
-            cell = tableView.dequeueReusableCellWithIdentifier("WebViewCell") as! WebViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "WebViewCell") as! WebViewCell
         } else if object is GetCommentsFeed {
             let objectForcell : GetCommentsFeed = object as! GetCommentsFeed
             if objectForcell.isReplie == true{
-                var cell = tableView.dequeueReusableCellWithIdentifier("CommentCell") as! CommentCell
-                cell = returnReplyCell(cell, comment: objectForcell, date: PrivetFunctions.sharedInstance.setDateInFofmat(objectForcell.ts!), newComment: PrivetFunctions.sharedInstance.decodingString(objectForcell.comment!), newName: PrivetFunctions.sharedInstance.decodingString(objectForcell.name!))
+                var cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
+                cell = returnReplyCell(cell, comment: objectForcell, date: PrivetFunctions.sharedInstance.setDateInFofmat(objectForcell.ts!) as Date, newComment: PrivetFunctions.sharedInstance.decodingString(objectForcell.comment!), newName: PrivetFunctions.sharedInstance.decodingString(objectForcell.name!))
                 return cell
             } else {
-                var cell = tableView.dequeueReusableCellWithIdentifier("CommentCell") as! CommentCell
-                cell = returnCommentCell(cell, comment: objectForcell, date: PrivetFunctions.sharedInstance.setDateInFofmat(objectForcell.ts!), newComment: PrivetFunctions.sharedInstance.decodingString(objectForcell.comment!), newName: PrivetFunctions.sharedInstance.decodingString(objectForcell.name!))
+                var cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
+                cell = returnCommentCell(cell, comment: objectForcell, date: PrivetFunctions.sharedInstance.setDateInFofmat(objectForcell.ts!) as Date, newComment: PrivetFunctions.sharedInstance.decodingString(objectForcell.comment!), newName: PrivetFunctions.sharedInstance.decodingString(objectForcell.name!))
                 return cell
             }
         }

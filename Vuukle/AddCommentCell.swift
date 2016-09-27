@@ -8,7 +8,7 @@ protocol AddCommentCellDelegate {
 }
 class AddCommentCell: UITableViewCell , UITextViewDelegate {
     var delegate : AddCommentCellDelegate?
-    let defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    let defaults : UserDefaults = UserDefaults.standard
     
     var indexRow = 1
     
@@ -34,33 +34,33 @@ class AddCommentCell: UITableViewCell , UITextViewDelegate {
     
     @IBAction func postButton(sender: AnyObject) {
         
-        if self.defaults.objectForKey("name") as? String == nil {
-            self.defaults.setObject("\(nameTextField.text!)", forKey: "name")
+        if self.defaults.object(forKey: "name") as? String == nil {
+            self.defaults.set("\(nameTextField.text!)", forKey: "name")
             self.defaults.synchronize()
             
         } else {
             
-            self.defaults.removeObjectForKey("name")
-            self.defaults.setObject("\(nameTextField.text!)", forKey: "name")
+            self.defaults.removeObject(forKey: "name")
+            self.defaults.set("\(nameTextField.text!)", forKey: "name")
             self.defaults.synchronize()
         }
         
-        if self.defaults.objectForKey("email") as? String == nil {
-            self.defaults.setObject("\(emailTextField.text!)", forKey: "email")
+        if self.defaults.object(forKey: "email") as? String == nil {
+            self.defaults.set("\(emailTextField.text!)", forKey: "email")
             self.defaults.synchronize()
             
         } else {
             
-            self.defaults.removeObjectForKey("email")
-            self.defaults.setObject("\(emailTextField.text!)", forKey: "email")
+            self.defaults.removeObject(forKey: "email")
+            self.defaults.set("\(emailTextField.text!)", forKey: "email")
             self.defaults.synchronize()
         }
         
-        self.delegate?.postButtonPressed(self ,postButtonPressed : sender)
+        self.delegate?.postButtonPressed(tableCell: self ,postButtonPressed : sender)
     }
     
     @IBAction func logOutButton(sender: AnyObject) {
-        self.delegate?.logOutButtonPressed(self, logOutButtonPressed: sender)
+        self.delegate?.logOutButtonPressed(tableCell: self, logOutButtonPressed: sender)
     }
     
     
@@ -76,24 +76,27 @@ class AddCommentCell: UITableViewCell , UITextViewDelegate {
         emailTextField.layer.cornerRadius = 5
         
         commentTextView.layer.borderWidth = 1
-        commentTextView.layer.borderColor = UIColor.lightGrayColor().CGColor
+        commentTextView.layer.borderColor = UIColor.lightGray.cgColor
         
         nameTextField.layer.borderWidth = 1
-        nameTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
         
         emailTextField.layer.borderWidth = 1
-        emailTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        emailTextField.layer.borderColor = UIColor.lightGray.cgColor
         
         background.layer.borderWidth = 1
-        background.layer.borderColor = UIColor.lightGrayColor().CGColor
+        background.layer.borderColor = UIColor.lightGray.cgColor
         
         commentTextView.text = "Please write a comment..."
-        commentTextView.textColor = UIColor.lightGrayColor()
+        commentTextView.textColor = UIColor.lightGray
         commentTextView.delegate = self
         
         let viewForDoneButtonOnKeyboard = UIToolbar()
         viewForDoneButtonOnKeyboard.sizeToFit()
-        let btnDoneOnKeyboard = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: #selector(AddCommentCell.doneBtnFromKeyboardClicked(_:)))
+        let btnDoneOnKeyboard = UIBarButtonItem(title: "Done",
+                                                style: .plain,
+                                                target: self,
+                                                action: #selector(doneBtnFromKeyboardClicked(sender:)))
         viewForDoneButtonOnKeyboard.setItems([btnDoneOnKeyboard], animated: false)
         
         nameTextField.inputAccessoryView = viewForDoneButtonOnKeyboard
@@ -107,24 +110,25 @@ class AddCommentCell: UITableViewCell , UITextViewDelegate {
         commentTextView.resignFirstResponder()
     }
     
-    func textViewDidBeginEditing(textView: UITextView) {
+    func textViewDidBeginEditing(_ textView: UITextView) {
         
-        if commentTextView.textColor == UIColor.lightGrayColor() {
+        if commentTextView.textColor == UIColor.lightGray {
             commentTextView.text = ""
             commentTextView.text = nil
-            commentTextView.textColor = UIColor.blackColor()
+            commentTextView.textColor = UIColor.black
         }
     }
     
-    func textViewDidEndEditing(textView: UITextView) {
+    func textViewDidEndEditing(_ textView: UITextView) {
         
         if commentTextView.text.isEmpty {
             commentTextView.text = "Please write a comment..."
-            commentTextView.textColor = UIColor.lightGrayColor()
+            commentTextView.textColor = UIColor.lightGray
         }
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
