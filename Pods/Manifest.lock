@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (3.5.0)
+  - AlamofireImage (2.5.0):
+    - Alamofire (~> 3.5)
+  - Vuukle (0.9.0):
+    - Alamofire (~> 3.4)
+    - AlamofireImage (~> 2.0)
+
+DEPENDENCIES:
+  - Vuukle (from `/Users/orest/Desktop/vuukle_iOS_SDK-master копія`)
+
+EXTERNAL SOURCES:
+  Vuukle:
+    :path: /Users/orest/Desktop/vuukle_iOS_SDK-master копія
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
+  Vuukle: 609d37f506a1f7fc99f0f108e3e131fd5a0208bd
+
+PODFILE CHECKSUM: 63a05d27860e809edebabdcb20963e13b7ffd6f7
+
+COCOAPODS: 1.1.0.rc.2
