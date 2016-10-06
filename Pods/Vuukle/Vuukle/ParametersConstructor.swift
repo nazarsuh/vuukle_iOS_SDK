@@ -9,7 +9,7 @@ class ParametersConstructor  {
     static let sharedInstance = ParametersConstructor()
     let defaults : UserDefaults = UserDefaults.standard
     
-
+    
     func showAlert(_ title : String ,message : String) {
         let ErrorAlert = UIAlertView(title: "\(title)", message: "\(message)", delegate: self, cancelButtonTitle: "Ok")
         ErrorAlert.show()
@@ -24,13 +24,13 @@ class ParametersConstructor  {
                 showAlert( "Please enter a correct email!",message: "")
                 allFill = false
             }
-        } else if name == ""{
+        } else if (name == "") || (name == " ") || checkStringForSpaces(string: name, indexSimbol: 0) == false{
             showAlert("Please enter a name!", message: "")
             allFill = false
         } else if email == ""{
             showAlert("Please enter a email!", message: "")
             allFill = false
-        } else if comment == "Please write a comment..." || comment == ""{
+        } else if ((comment == "Please write a comment...") || (comment == "") || (comment.isEmpty) || (comment == " ")) || (checkStringForSpaces(string: comment, indexSimbol: 0) == false) {
             showAlert("Please enter a comment!", message: "")
             allFill = false
         }
@@ -61,8 +61,11 @@ class ParametersConstructor  {
     
     
     func setRatePercent (_ first : Int , second : Int , thirt : Int , fourth : Int , fifth : Int , sixt : Int , element : Int) -> Int {
+        var percent = 0
         let sume : Int = first + second + thirt + fourth + fifth + sixt
-        let percent = (element * 100)/sume
+        if sume > 0{
+            percent = (element * 100)/sume
+        }
         return percent
     }
     
@@ -129,7 +132,7 @@ class ParametersConstructor  {
             }
             
         } else {
-           showAlert( "You have already voted!",message: "")
+            showAlert( "You have already voted!",message: "")
         }
     }
     
@@ -145,5 +148,17 @@ class ParametersConstructor  {
         Global.votes = data
         
     }
-
+    
+    func checkStringForSpaces(string : String , indexSimbol : Int) -> Bool {
+        var result : Bool!
+        var fullNameComponents = string.components(separatedBy: " ")
+        if fullNameComponents[indexSimbol].isEmpty && indexSimbol < string.characters.count{
+            checkStringForSpaces(string: string, indexSimbol: indexSimbol + 1)
+            result = false
+        } else {
+            result = true
+        }
+        return result
+    }
+    
 }

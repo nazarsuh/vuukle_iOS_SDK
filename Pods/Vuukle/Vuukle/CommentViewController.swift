@@ -121,7 +121,7 @@ class CommentViewController: UIViewController , UITableViewDelegate , UITableVie
             cell.delegate = self
             cell.tag = indexPath.row
             return cell
-        case is AddComment:
+        case is CommentForm:
             let  cell : AddCommentCell = CellConstructor.sharedInstance.returnCellForRow(arrayObjectsForCell[indexPath.row], tableView: tableView) as! AddCommentCell
             cell.delegate = self
             cell.tag = indexPath.row
@@ -131,7 +131,7 @@ class CommentViewController: UIViewController , UITableViewDelegate , UITableVie
             cell.delegate = self
             cell.tag = indexPath.row
             return cell
-        case is AddReply:
+        case is ReplyForm:
             let  cell : AddCommentCell = CellConstructor.sharedInstance.returnCellForRow(arrayObjectsForCell[indexPath.row], tableView: tableView) as! AddCommentCell
             cell.delegate = self
             cell.tag = indexPath.row
@@ -263,15 +263,15 @@ class CommentViewController: UIViewController , UITableViewDelegate , UITableVie
                 tableView.reloadData()
             } else if indexOfLastObject > 0 && indexOfLastObject != Int(tableCell.tag + 1) {
                 if indexOfLastObject > tableCell.tag + 1 {
-                    arrayObjectsForCell.insert(AddReply(), at: tableCell.tag + 1)
+                    arrayObjectsForCell.insert(ReplyForm(), at: tableCell.tag + 1)
                     indexOfLastObject = Int(tableCell.tag + 1)
                 } else if indexOfLastObject < tableCell.tag + 1 {
-                    arrayObjectsForCell.insert(AddReply(), at: tableCell.tag + 1 )
+                    arrayObjectsForCell.insert(ReplyForm(), at: tableCell.tag + 1 )
                     indexOfLastObject = Int(tableCell.tag + 1)
                 }
                 tableView.reloadData()
             } else {
-                arrayObjectsForCell.insert(AddReply(), at: tableCell.tag + 1)
+                arrayObjectsForCell.insert(ReplyForm(), at: tableCell.tag + 1)
                 indexOfLastObject = Int(tableCell.tag + 1)
                 tableView.reloadData()
             }
@@ -355,8 +355,8 @@ class CommentViewController: UIViewController , UITableViewDelegate , UITableVie
     
     func postButtonPressed(tableCell: AddCommentCell, pressed postButton: AnyObject) {
         
-        if arrayObjectsForCell[tableCell.tag] is AddComment {
-            let comment = arrayObjectsForCell[tableCell.tag] as! AddComment
+        if arrayObjectsForCell[tableCell.tag] is CommentForm {
+            let comment = arrayObjectsForCell[tableCell.tag] as! CommentForm
             if comment.addComment == true {
                 
                 if morePost == true {
@@ -387,7 +387,7 @@ class CommentViewController: UIViewController , UITableViewDelegate , UITableVie
                     }
                 }
             }
-        } else if arrayObjectsForCell[tableCell.tag] is AddReply {
+        } else if arrayObjectsForCell[tableCell.tag] is ReplyForm {
             if morePost == true {
                 let indexPath = NSIndexPath.init(row: tableCell.tag, section: 0)
                 let cell = tableView.cellForRow(at: indexPath as IndexPath) as! AddCommentCell
@@ -570,7 +570,7 @@ class CommentViewController: UIViewController , UITableViewDelegate , UITableVie
             
             self.arrayObjectsForCell.append(WebView())
             self.arrayObjectsForCell.append(Emoticon())
-            let addComment = AddComment()
+            let addComment = CommentForm()
             addComment.addComment = true
             self.arrayObjectsForCell.append(addComment)
             for object in array {
@@ -583,7 +583,7 @@ class CommentViewController: UIViewController , UITableViewDelegate , UITableVie
             
             self.arrayObjectsForCell.append(WebView())
             self.arrayObjectsForCell.append(Emoticon())
-            let addComment = AddComment()
+            let addComment = CommentForm()
             addComment.addComment = true
             self.arrayObjectsForCell.append(addComment)
             for object in array {

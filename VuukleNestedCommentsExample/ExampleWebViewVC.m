@@ -37,8 +37,8 @@
     VuukleCommentsBuilder *builder = [VuukleCommentsBuilder new];
     
     [[[[[[[[[[[[[[[[builder firstVuukleTag:@"articleTag1"]
-                    setVuukleApiKey:@"777854cd-9454-4e9f-8441-ef0ee894139e"]
-                   setVuukleArticleId:@"00048"]
+                   setVuukleApiKey:@"777854cd-9454-4e9f-8441-ef0ee894139e"]
+                  setVuukleArticleId:@"00048"]
                  setVuukleEmoteVisible:YES]
                 setVuukleHost:@"vuukle.com"]
                setVuukleSecretKey:@"07115720-6848-11e5-9bc9-002590f371ee"]

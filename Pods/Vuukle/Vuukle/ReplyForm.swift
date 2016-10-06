@@ -2,6 +2,6 @@
 
 import Foundation
 
-class AddReply {
+class ReplyForm {
     var addReply = true
 }

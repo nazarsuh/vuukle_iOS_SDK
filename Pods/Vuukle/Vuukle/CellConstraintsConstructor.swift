@@ -41,6 +41,7 @@ class CellConstraintsConstructor {
         cell.totalCountHeight.constant = 5
         cell.logOutButtonHeight.constant = 5
         cell.totalCount.isHidden = true
+        
         return cell
     }
 

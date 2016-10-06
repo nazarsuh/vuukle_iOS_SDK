@@ -209,7 +209,7 @@ class NetworkManager {
     
     func setRaring(_ article_id : String ,emote : Int,completion : @escaping (ResponseToEmoteRating) -> Void) {
         
-
+        print("\(Global.baseURL)setEmoteRating?host=\(Global.host)&api_key=\(Global.api_key)&article_id=\(article_id)&article_title=\(Global.article_title)&article_image=\(Global.article_image)&emote=\(emote)")
         Alamofire.request("\(Global.baseURL)setEmoteRating?host=\(Global.host)&api_key=\(Global.api_key)&article_id=\(article_id)&article_title=\(Global.article_title)&article_image=\(Global.article_image)&emote=\(emote)&url=\(Global.articleUrl)")
             .responseJSON { response in
                 

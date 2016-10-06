@@ -208,7 +208,7 @@ open class  CellConstructor {
         return cell
     }
     
-    func returnAddCommentCellForReply(_ cell : AddCommentCell , object : AddReply) -> AddCommentCell{
+    func returnAddCommentCellForReply(_ cell : AddCommentCell , object : ReplyForm) -> AddCommentCell{
         
         var cell = CellConstraintsConstructor.sharedInstance.setAddCommentCellForReplyConstraints(cell)
         if let lname = self.defaults.object(forKey: "name") as? String {
@@ -254,7 +254,7 @@ open class  CellConstructor {
             var cell = tableView.dequeueReusableCell(withIdentifier: "LoadMoreCell") as! LoadMoreCell
             cell = returnLoadMoreCell(cell, object: objectForcell)
             return cell
-        } else if object is AddComment {
+        } else if object is CommentForm {
             var cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell") as! AddCommentCell
             cell = returnAddCommentCellForComment(cell)
             return cell
@@ -262,8 +262,8 @@ open class  CellConstructor {
             var cell = tableView.dequeueReusableCell(withIdentifier: "EmoticonCell") as! EmoticonCell
             cell = returnEmoticonCell(cell)
             return cell
-        } else if object is AddReply {
-            let objectForcell : AddReply = object as! AddReply
+        } else if object is ReplyForm {
+            let objectForcell : ReplyForm = object as! ReplyForm
             var cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell") as! AddCommentCell
             cell = returnAddCommentCellForReply(cell, object: objectForcell)
             return cell

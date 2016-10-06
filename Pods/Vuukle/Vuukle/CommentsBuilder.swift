@@ -51,8 +51,6 @@ open class VuukleCommentsBuilder : NSObject {
     
     
     /**
-     Required field !
-     
      Get id from Vuukle site. Every article has unique id!
      */
     open func setVuukleArticleId(_ articleId : String) -> VuukleCommentsBuilder{
@@ -236,7 +234,7 @@ open class VuukleCommentsBuilder : NSObject {
     /**
      Required field!
      
-     Set your View name where should be displayed Vuukle!For example: "myView".
+     Set your View name!For example: "myView".
      
      ---- or ----
      

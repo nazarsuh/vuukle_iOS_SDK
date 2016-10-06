@@ -6,7 +6,7 @@ protocol AddCommentCellDelegate {
     func postButtonPressed(tableCell : AddCommentCell ,pressed postButton : AnyObject )
     func logOutButtonPressed(tableCell : AddCommentCell ,pressed logOutButton : AnyObject )
 }
-class AddCommentCell: UITableViewCell , UITextViewDelegate {
+class AddCommentCell: UITableViewCell , UITextViewDelegate , UITextFieldDelegate {
     var delegate : AddCommentCellDelegate?
     let defaults : UserDefaults = UserDefaults.standard
     
@@ -92,9 +92,19 @@ class AddCommentCell: UITableViewCell , UITextViewDelegate {
                                                 action: #selector(doneBtnFromKeyboardClicked(sender:)))
         viewForDoneButtonOnKeyboard.setItems([btnDoneOnKeyboard], animated: false)
         
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        
         nameTextField.inputAccessoryView = viewForDoneButtonOnKeyboard
         emailTextField.inputAccessoryView = viewForDoneButtonOnKeyboard
         commentTextView.inputAccessoryView = viewForDoneButtonOnKeyboard
+        
+        commentTextView.returnKeyType = UIReturnKeyType.default
+        nameTextField.returnKeyType = UIReturnKeyType.next
+        emailTextField.returnKeyType = UIReturnKeyType.next
+        
+        emailTextField.enablesReturnKeyAutomatically = true
+        nameTextField.enablesReturnKeyAutomatically = true
     }
     
     func doneBtnFromKeyboardClicked(sender : UIBarButtonItem) {
