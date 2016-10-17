@@ -1,18 +1,14 @@
+    platform :ios, '9.0'
+
+    use_frameworks!
 
 
-platform :ios, '9.0'
+        target ‘VuukleNestedCommentsExample’ do
+        use_frameworks!
 
-use_frameworks!
+        pod ‘Vuukle’, :git => 'https://github.com/b13markus/Vuukle_comments_test', :branch => ‘swift_3’
 
-
-target ‘VuukleNestedCommentsExample’ do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-
-    pod ‘Vuukle’, :git => 'https://github.com/vuukle/vuukle_iOS_SDK.git', :branch => ‘swift_3’
-
-end
+    end
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|

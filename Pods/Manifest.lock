@@ -2,28 +2,28 @@ PODS:
   - Alamofire (4.0.1)
   - AlamofireImage (3.1.0):
     - Alamofire (~> 4.0)
-  - Vuukle (0.9.3.0):
+  - Vuukle (0.9.8):
     - Alamofire (~> 4.0)
     - AlamofireImage (~> 3.0)
 
 DEPENDENCIES:
-  - Vuukle (from `https://github.com/b13markus/Vuukle_comments_test.git`, branch `swift_3.0`)
+  - Vuukle (from `https://github.com/b13markus/Vuukle_comments_test`, branch `swift_3`)
 
 EXTERNAL SOURCES:
   Vuukle:
-    :branch: swift_3.0
-    :git: https://github.com/b13markus/Vuukle_comments_test.git
+    :branch: swift_3
+    :git: https://github.com/b13markus/Vuukle_comments_test
 
 CHECKOUT OPTIONS:
   Vuukle:
-    :commit: 277f76d5dce828ab3bc6ac0efca912f1cf3d2ecc
-    :git: https://github.com/b13markus/Vuukle_comments_test.git
+    :commit: 2f58308bc12b5ccc50790437155f59a79e8ff741
+    :git: https://github.com/b13markus/Vuukle_comments_test
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
-  Vuukle: d7ccbcb39b45a61136b4b9a5b06ea39ddedf490f
+  Vuukle: 8b8b617384891462a542b35a1e2665b6dbec0ffa
 
-PODFILE CHECKSUM: 26aea7ba5b9ce8db17f141b33e4f7c6e09373d82
+PODFILE CHECKSUM: c9b8c8eb5182b895b846879e565fb006eda91e17
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.0.rc.3

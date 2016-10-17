@@ -12,24 +12,31 @@ open class  CellConstructor {
     func returnEmoticonCell(_ cell : EmoticonCell) -> EmoticonCell{
         
         var cell = cell
-        
+        cell.thanksText.isHidden = true
         if Global.showEmoticonCell == false {
             cell = CellConstraintsConstructor.sharedInstance.setEmoticonCellConstraint(cell)
         }
         if let selected = self.defaults.object(forKey: "\(Global.article_id)") as? String {
+            cell.thanksText.isHidden = false
             switch "\(selected)" {
             case "firstEmoticonSelected":
                 cell.firstEmoticonLabel.textColor = UIColor.red
+                cell.countFirstEmoticonLabel.textColor = UIColor.red
             case "secondEmoticonSelected":
                 cell.secondEmoticonLabel.textColor = UIColor.red
+                cell.countSecondEmoticonLabel.textColor = UIColor.red
             case "thirdEmoticonSelected":
                 cell.thirdEmoticonLabel.textColor = UIColor.red
+                cell.countThirdEmoticonLabel.textColor = UIColor.red
             case "fourthEmoticonSelected":
                 cell.fourthEmoticonLabel.textColor = UIColor.red
+                cell.countFourthEmoticonLabel.textColor = UIColor.red
             case "fifthEmoticonSelected":
                 cell.fifthEmoticonLabel.textColor = UIColor.red
+                cell.countFifthEmoticonLabel.textColor = UIColor.red
             case "sixtEmoticonSelected":
                 cell.sixthEmoticonLabel.textColor = UIColor.red
+                cell.countSixthEmoticonLabel.textColor = UIColor.red
             default:
                 break
             }
@@ -68,6 +75,15 @@ open class  CellConstructor {
             
         }
         
+        if !Global.showEmoticonCell {
+            cell.countFirstEmoticonLabel.isHidden = true
+            cell.countSecondEmoticonLabel.isHidden = true
+            cell.countThirdEmoticonLabel.isHidden = true
+            cell.countFourthEmoticonLabel.isHidden = true
+            cell.countFifthEmoticonLabel.isHidden = true
+            cell.countSixthEmoticonLabel.isHidden = true
+        }
+        
         return cell
         
     }
@@ -76,9 +92,9 @@ open class  CellConstructor {
 
         
         var cell = CellConstraintsConstructor.sharedInstance.setCommentCellConstraints(cell)
-
+        cell.hideProgress()
         cell.userNameLabel.textColor = UIColor.blue
-        cell.commentLabel.text = newComment
+        cell.commentLabel.text = newComment.replacingOccurrences(of: "<br/>", with: " ", options: NSString.CompareOptions.literal, range: nil)
         cell.userNameLabel.text = newName
         cell.dateLabel.text = TimeAgo.sharedInstance.timeAgoSinceDate(date: date as NSDate, numericDates: true)
         cell.countLabel.text = String(comment.user_points!)
@@ -121,7 +137,17 @@ open class  CellConstructor {
         return cell
     }
     
+    func returnMostPopularArticleCell (_ cell : MostPopularArticleCell , object : MostPopularArticle ) -> MostPopularArticleCell {
+        if object.imgUrl != "" && object.imgUrl != nil {
+            cell.imageForCell = object.imgUrl
+        }
+        cell.aboutArticleLabel.text = object.heading
+        return cell
+    }
+    
     func returnReplyCell (_ cell : CommentCell ,comment : CommentsFeed , date : Date ,newComment : String ,newName : String ) -> CommentCell {
+        
+        cell.hideProgress()
         cell.imageLeftCostraint.constant = CGFloat(Global.leftConstrainReplySize)
         cell.totalCountLeftConstraint.constant = CGFloat(Global.leftConstrainReplySize)
         cell.upvoteButtonLeftConstraint.constant = CGFloat(Global.leftConstrainReplySize)
@@ -172,6 +198,8 @@ open class  CellConstructor {
     
     func returnAddCommentCellForComment(_ cell : AddCommentCell) -> AddCommentCell{
         
+        cell.hideProgress()
+        
         var cell = CellConstraintsConstructor.sharedInstance.setAddCommentCellConstraints(cell)
         if self.defaults.object(forKey: "name") as? String != nil {
             cell.nameTextField.text = self.defaults.object(forKey: "name") as? String
@@ -210,6 +238,7 @@ open class  CellConstructor {
     
     func returnAddCommentCellForReply(_ cell : AddCommentCell , object : ReplyForm) -> AddCommentCell{
         
+        cell.hideProgress()
         var cell = CellConstraintsConstructor.sharedInstance.setAddCommentCellForReplyConstraints(cell)
         if let lname = self.defaults.object(forKey: "name") as? String {
             cell.nameTextField.text = lname
@@ -288,6 +317,11 @@ open class  CellConstructor {
                 cell = returnCommentCell(cell, comment: objectForcell, date: ParametersConstructor.sharedInstance.setDateInFofmat(objectForcell.ts!) as Date, newComment: ParametersConstructor.sharedInstance.decodingString(objectForcell.comment!), newName: ParametersConstructor.sharedInstance.decodingString(objectForcell.name!))
                 return cell
             }
+        } else if object is MostPopularArticle {
+            let objectForcell : MostPopularArticle = object as! MostPopularArticle
+            var cell = tableView.dequeueReusableCell(withIdentifier: "MostPopularArticleCell") as! MostPopularArticleCell
+            cell = returnMostPopularArticleCell(cell, object: object as! MostPopularArticle)
+            return cell
         }
         return cell
     }
