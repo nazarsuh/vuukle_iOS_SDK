@@ -7,104 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00AFAB974374405D72A5B4CC934C1010 /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A7E79A5C3204431110A7D5A5B90F1C /* LoadMoreCell.swift */; };
-		024C9468242EFC09B5B71076D0BDABB5 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA20F22A9133E6689BDF5DB413EF17F0 /* ImageDownloader.swift */; };
+		00F03A076AC35562C402455FEB0FE900 /* MostPopularArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D52640BE666B1180B74BD5EC4387CA9 /* MostPopularArticleCell.swift */; };
+		01136C261DFA2AF3D96D0F50F7F53D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771F1EC78432FE297C7A17C6CE378324 /* Main.storyboard */; };
+		024C9468242EFC09B5B71076D0BDABB5 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA2CCBED1CFB05BB76184AE51597D5 /* ImageDownloader.swift */; };
 		043A09C649CB5C4B17B26DE83EC6C90E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C78C6D0F956EB6D701078B509E7C3C3 /* Alamofire.framework */; };
-		056BD6E242BE65948DCD0A3CF1ADB3AE /* CommentsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A55214CDACD16B8F38D3934E49CFD /* CommentsBuilder.swift */; };
-		0A3A2DF6CC94825B092F895FC4E47F02 /* non_secure.html in Resources */ = {isa = PBXBuildFile; fileRef = CCA6F684C785F6AE4ACC70E01DB121BA /* non_secure.html */; };
+		06A012BABCD35158F20B71E0AE2DB3E0 /* vuukle_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25564412A578808746E25C908AC217A8 /* vuukle_logo.jpg */; };
+		06D54A9AABE526F2D3C81A47D8FC7930 /* AddCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3921C2E7C0DA2B7893C04BC59C8C858 /* AddCommentCell.xib */; };
+		0AA378A774B3658AE7943ABFD5042DC2 /* CommentsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C95EF166FD5C44693404CDBC57C98 /* CommentsBuilder.swift */; };
 		0B8551E9AC828974E86D9D03A7F8BC92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C78C6D0F956EB6D701078B509E7C3C3 /* Alamofire.framework */; };
-		0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A960AD51F5130FEA7997BDF5EF8AB /* Notifications.swift */; };
-		0D6845B8E344450E6758BC9F8BAF4412 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A72C9C1DA9D9A1356C97CF85D8468C2 /* facebook.png */; };
-		0E6C302625BEE1F4DC29A4EC4700528D /* ContentWebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081782CD7DA6B6328454CCF94045F70B /* ContentWebViewCell.swift */; };
-		0FC8EBE92E7D8D28CB1079C0024CA75D /* Vuukle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E67C87CB8001312D47240AACBEE816D5 /* Vuukle-dummy.m */; };
-		10E5DCAAEEE2138097730336E77278F8 /* TotalCommentsCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2BE3B3777C49D5CD4D932392EAEABC /* TotalCommentsCount.swift */; };
-		12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B2134C577C6F37355C134CAB4936E1 /* Request.swift */; };
+		0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CFD3518AAC53275E640409345EDBB /* Notifications.swift */; };
+		0EB2F61415F37A9EC00E7380CFF7AC91 /* smile-excited.png in Resources */ = {isa = PBXBuildFile; fileRef = 96AA77CE1C6BD9C02C0D963024E3F93B /* smile-excited.png */; };
+		12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C68E619100F5DADDB86BEA63EB105A0 /* Request.swift */; };
+		1401DCB36CF28A2E1DE00EBA731B5979 /* smile-angry.png in Resources */ = {isa = PBXBuildFile; fileRef = B60B2E5F6EB820ED3FBC793375934FB6 /* smile-angry.png */; };
 		1BABFC26AD5A41CA4C2DE98CA727A655 /* Pods-VuukleNestedCommentsExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B167E366110931296E1320CA53C57ED9 /* Pods-VuukleNestedCommentsExample-dummy.m */; };
-		2326F9338463BB7DA7A6C713B4B09AF5 /* AddCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6065329D02B639047B22307E5A7BC228 /* AddCommentCell.xib */; };
-		24D39F0B05795B78F2048D795F1ACBBD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DDA8A1EA023B6FD72D147E37D29A6 /* WebView.swift */; };
-		3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC47165DAFA3660629408EDAE9F49147 /* Timeline.swift */; };
-		39D70602768C7DD050C0E69EA123668C /* smile-sad-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F39614993E6DFF319C265059F08BD0F /* smile-sad-full.png */; };
-		3C33FBF15691D720CD194BF3FF548DEA /* LoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E914B4865C98BF36F15943CB1CCF2433 /* LoadMoreCell.xib */; };
-		3C60DF06C4D9514E3E0AF98F3773EE59 /* 122.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F8B62B4AB16C216CE9FAA97D5DC1B8 /* 122.png */; };
-		424D69DE5D2C0A4510BA98A1D27C67CA /* smile-angry.png in Resources */ = {isa = PBXBuildFile; fileRef = B48DFCED1108348CEF7F1F7A611D70AD /* smile-angry.png */; };
-		43DF3FF82E3C7954C5458C6C2FF836E9 /* smile-amused.png in Resources */ = {isa = PBXBuildFile; fileRef = F82B9B42E32E42B55EE1AC6728AD1351 /* smile-amused.png */; };
-		444648D8C35C9562BB349F2F34AAAB1E /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897E4A6F0C7F42DA26CEB67002AFD09 /* MoreView.swift */; };
-		459DA8254FABB703A914CD92AC065AFD /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DDB1C96EA85140474D708D05E59C3 /* Global.swift */; };
+		1DC6B19C5836C78778111E1196C915AE /* CommentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71923CDE4AD8FA56E517B804CD07CDC /* CommentForm.swift */; };
+		22956CC230E30556E6DC6154A1406C21 /* ResponseToEmoteRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2451F410585414A8F03640C33EEAF24 /* ResponseToEmoteRating.swift */; };
+		2459772D2F32301E93036C41A3D8828F /* LoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8B04B5D438D55232A8DBDA4EC1FFE /* LoadMoreCell.xib */; };
+		292A3515AD65F35F508993E7F8B0D02D /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5A058F6828D492071A70CFE22790E3 /* LoginView.xib */; };
+		2A00B7A0DFCF2F9F2849A99481869609 /* TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972B09C1F41AC01256FC2AA38349725 /* TimeAgo.swift */; };
+		341C49B65C2CA0AC6291C6B3861A2656 /* thumb-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0515450871E8A061870E4EFDFFADC2 /* thumb-up.png */; };
+		3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F570FC39E21FE0B911A518A7F597 /* Timeline.swift */; };
+		465443FAF1FB922FD55AC41FAE41C00E /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E9FEE7C65591A0B4166D55E3CFAD7 /* LoginCell.swift */; };
 		4811CD4B640FA8C4786D65DA9D9B2DE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E04109451B5D42F454D4B51B1BB33D /* Foundation.framework */; };
-		4EE81DD242C88F70E4A36F7657C3F11E /* smile-indifferent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2392A11CFD40C51B7A501DE7FC6ACBA9 /* smile-indifferent.png */; };
-		5111AEF65DC9CB2B58E24EE707CC3697 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3728BA62BCB135B5380C9587B1998DEA /* UIImageView+AlamofireImage.swift */; };
-		51C42682C7331B551D2281096F1EB740 /* ReplyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDD4E7F7C4E62891C049517A99758A /* ReplyForm.swift */; };
-		523A2A7D845D2BF63244348680538285 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A17D1077AEF927B2EB743AF2FADF77 /* ImageFilter.swift */; };
-		5440344B3A20741A1893E64EB0C7085D /* ResponseToEmoteRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532871D487BA9E965B0188E18034D26F /* ResponseToEmoteRating.swift */; };
-		569B251677908E2FE12D150D03458750 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B3260C76259D529A7FB1E66050049 /* UIImage+AlamofireImage.swift */; };
-		5808316142A312D3911BA81232EE1863 /* ContentWebViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1553D7D45E8DFCC96C22FC5E99D9ECC /* ContentWebViewCell.xib */; };
+		4A122BFDEC054BAEE12DB8C31B6B6969 /* WebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDC4FA66154355DCED4FF582FD67A3 /* WebViewCell.swift */; };
+		4AA01D7CBE26C42724ED07A07544CC4A /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D59A12C438CEB7572FB12FC537261FD /* Global.swift */; };
+		50F7392230A2F48094122CC3853DC466 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851FBD63EBA93BEA0267C25B7EF7F3E /* MoreView.swift */; };
+		5111AEF65DC9CB2B58E24EE707CC3697 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313CF622CD55E366970D95847541813 /* UIImageView+AlamofireImage.swift */; };
+		523A2A7D845D2BF63244348680538285 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64918E6B936E82C7876F2F624275184 /* ImageFilter.swift */; };
+		55BA8383267D9918310FF7C26A7DAE46 /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9FE1F56A0147CAE0A951A49A3C713F /* AddCommentCell.swift */; };
+		569B251677908E2FE12D150D03458750 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B44A908773C2653351748969C40903 /* UIImage+AlamofireImage.swift */; };
+		5913309B0EC6DE4C06E6293FCA471E68 /* smile-happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 58571BEB3F876F6C519927C60F572DC7 /* smile-happy.png */; };
+		59CC4D5D7DE3ED089E9CF3E8A9741F8B /* EmoticonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774FB8FD7D24AF2AC1F1E001C358B770 /* EmoticonCell.xib */; };
+		5AAF56B78C0C0C46B77D9F8224059EFA /* ReplyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48C0532EA705F4530388C99319BB00A /* ReplyForm.swift */; };
+		5AD1E900345A3E23DC5EC6B77258938B /* LocalCommentsConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE665BCBCF68EDB9837F34B86552800 /* LocalCommentsConstructor.swift */; };
+		5C281C2799BA1AB9809BC2A4904E1A5F /* Solid_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C7E2DA9A94E7EBD96CCF6DA5B8F285 /* Solid_gray.png */; };
 		5F020312AB90B099B490E3BB95831D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E04109451B5D42F454D4B51B1BB33D /* Foundation.framework */; };
-		5F8312B9CB735A8237A29E4FFC91BD2C /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = D93B0C87187D3489FA704D221C73C73C /* images.png */; };
 		5FEB7B5EFEF6BB4A81E4320E023303B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E04109451B5D42F454D4B51B1BB33D /* Foundation.framework */; };
-		62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4427E7A6D9E86C9D9F941E24BE707FC /* AFError.swift */; };
-		64146903ED33909D2DE6D77550BBCA32 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E895233351C8B6437105044BE4503C /* ImageCache.swift */; };
-		645D53FC1D77F35DB69E8974BD483157 /* ResponseToComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F4F08F19569DE731821D263143710 /* ResponseToComment.swift */; };
-		65B299C067DF1A8DBF597AF849F20FCA /* smile-happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 21971E60FAC1D246062B5362C136EEF9 /* smile-happy.png */; };
-		669AE6F50CC48CCE91E966AC2F966E55 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE76264C07C05CA6F23342C13ADF98 /* Emoticon.swift */; };
-		68B268BACE599CB712C129F910CF806B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF79432AC0BD29EB82E4DD69893F248 /* AppDelegate.swift */; };
-		68D42958341F110CAFD1AEBE2A2ADB54 /* CommentsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B16176956B29AE36E4ED4DAD2482FC0 /* CommentsFeed.swift */; };
-		69D84D1AE7BF3EC53B82EC6255249615 /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F236A58FB4CB6C84D90E8F005B35B /* EmoticonCell.swift */; };
-		7298B73F98597A3C93AB872EB6255D4C /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30432CE5D0A1B3F01AED6B0269CA5999 /* UIButton+AlamofireImage.swift */; };
-		74309307173FA52020806601F138B38B /* images-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3F102FBB45BC45F26C464B96C1C062 /* images-2.png */; };
-		75CE1143044B5388A6BE5626E7B78ABC /* LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0848DA3DBB35BBF2A653956628C588F9 /* LoadMore.swift */; };
-		7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B061BD0D585BBFF30266846ABB3EB4 /* Alamofire.swift */; };
-		7DEE2995D291320AFDAD89809E1B41D4 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42A483F10E652783D217770A5729B43 /* CommentCell.xib */; };
-		80E9763CAA042566972F29DC6C3109CD /* Vuukle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 229D2974B11295DA03C4977489211BDC /* Vuukle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81AA1AD67B04AC07575C41E2520B8780 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823A6E4347D33F2859007C6FD828278 /* Request+AlamofireImage.swift */; };
-		82ACC1F58F2E42DE9FBFA1B968529094 /* LocalCommentsConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9E22CF306D93E360E217E6E47FEDC /* LocalCommentsConstructor.swift */; };
-		84CCEE8AF5012694F81CE0F13361DC8D /* thumb-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 528E600F238A6FB9BB230B03D36FBE56 /* thumb-down.png */; };
-		8507B0D3FCA39C400EF201F72DD3D7AE /* WebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC29A25AD73CD34B10C0998C020484 /* WebViewCell.swift */; };
-		85C2091BD8EBEB14786936E52BECBD35 /* Solid_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 628E301C42C36BA6807BC5022858B996 /* Solid_gray.png */; };
-		86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1254299B9D7C6531C801504BB812911 /* Response.swift */; };
-		8792B35C7FD58D4244F1319375E85A5F /* thumb-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CF320022B161D00F72E786D29A5F1 /* thumb-up.png */; };
-		8C674A9DCFF8F294EE83BB3810EB782E /* MostPopularArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C609BDB989FB06E8F918459E497B53D /* MostPopularArticle.swift */; };
-		8D38A186919479D3C72F810AD110A495 /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2D5F7D0C2B5862D364FBA6997841A /* AddCommentCell.swift */; };
-		8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AB75EC38FDA41D9DF8B1CFDF2705C8 /* Alamofire-dummy.m */; };
-		8E5D76DABB0F39005FE42215DA526FED /* VuukleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD06D5937305A1EE612E290975D231 /* VuukleInfo.swift */; };
-		907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB2B4E9C2CE11DFA44A943956CDB4C /* SessionDelegate.swift */; };
+		6072881193676C40257A88D7D90A6245 /* smile-amused.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4CC1161C7D24D4DDA8F4963BF684E4 /* smile-amused.png */; };
+		62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82EB4BB7FA731D5997801375F244A7C /* AFError.swift */; };
+		64146903ED33909D2DE6D77550BBCA32 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAD8FD6C25B39283F125CB56DA4A53 /* ImageCache.swift */; };
+		65958FF5D7644B7D4F5A4B7A15A741CA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1C92E5F4E839BDB846B01CEC9011D /* LoginView.swift */; };
+		679409816886AD29641F1C831FE24E40 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED7612635F0C9A7257662A8912533C /* NetworkManager.swift */; };
+		6B4CE3478E4E590880223057FBE7A1B7 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD55962A6A38AF1422454EE23112F2B /* Emoticon.swift */; };
+		6D3578B3BD53BF364DBFA3336A11FF56 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F5A22761ABEE8E4BB026B5415315A0 /* LoginForm.swift */; };
+		7298B73F98597A3C93AB872EB6255D4C /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23CA29D4E26E17D4A87499FF071B8F /* UIButton+AlamofireImage.swift */; };
+		7A4192348817A76688A2B03FCC731D33 /* CellConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FE9988FA8786528B3462B7B77FA1F /* CellConstructor.swift */; };
+		7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D8C8763DBE659BEB14B358ACAD5277 /* Alamofire.swift */; };
+		7CA7783D3F16BFB90405BDE3C16DC070 /* TotalCommentsCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F45BB5528168DE46400A6DE649C89 /* TotalCommentsCount.swift */; };
+		7FF8BD14EDFF9F210525D42B60C0A82A /* WebViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C39175774F449B8B7FF13A9C447592 /* WebViewCell.xib */; };
+		80E9763CAA042566972F29DC6C3109CD /* Vuukle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDBC8E31BBE47F0F0FAAB78580B12972 /* Vuukle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81AA1AD67B04AC07575C41E2520B8780 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F01E792EFAD94265050E84D3820FB /* Request+AlamofireImage.swift */; };
+		826B4A877FBDE58E244B5A5B1E5FD0B1 /* non_secure.html in Resources */ = {isa = PBXBuildFile; fileRef = 62802BA42130ED01C3B1D805BDB4F3D6 /* non_secure.html */; };
+		85E2D2FFEF1ECBDD611096EF3129A277 /* MostPopularArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA16E095E16B5D450C560B6B8961CB /* MostPopularArticleCell.xib */; };
+		86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716886C8D20DCECBD47D9420DEADAC0D /* Response.swift */; };
+		881DE8A449A3BC71DEF0B1B7790CFF93 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7246B0B998801F108A1FCC8E57B0157E /* CommentCell.swift */; };
+		8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FF7CE29FE253855321384D899A96D8 /* Alamofire-dummy.m */; };
+		907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29FC90C72A267182571E3F1A20F1440 /* SessionDelegate.swift */; };
+		90C188365DF4A27D5A3799090497E6DE /* 122.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C36A85F2EDEA462A6AB46497A93E389 /* 122.png */; };
 		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E04109451B5D42F454D4B51B1BB33D /* Foundation.framework */; };
-		92FD55052C5A679BF47867DA55E293AC /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F47AAE9DCDD50EA24B9CE73588A3B8C /* MoreView.xib */; };
-		9324FEF1D254282D1A42250929D02DCE /* EmoteRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765BDF58190652A21527D8E087FF00E /* EmoteRating.swift */; };
-		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A36725F70E66FEA4432C8686685DD1E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9511D41361330D3EA01CA77FA6392376 /* smile-excited.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CFA142551E9D42D1823393A223216A /* smile-excited.png */; };
-		9BF27487EC8401E943675FA598541922 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEAF54127D5CA71C72ABD1183FB382 /* AFIError.swift */; };
-		9D8EF5DB6D965089E1D87A0D88BF88C5 /* WebViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487CF4D14C603FE44D9697858703B7C7 /* WebViewCell.xib */; };
-		A17108079823EDA061AF1CAD68FC765C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E774976E5DCDD25E8548F5F09BA06B /* Main.storyboard */; };
-		A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF54CBB81E8435BE391320BEB75A459 /* SessionManager.swift */; };
-		A97466FFB687692133D2E972830E8C99 /* CellConstraintsConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C96C5D0C5910F64134DEDD61DE51 /* CellConstraintsConstructor.swift */; };
-		ACD881D97A77FC33A8AB5166BC973315 /* MostPopularArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 050E9EA23E0F5E2B23F7207ACF900D89 /* MostPopularArticleCell.xib */; };
-		AE3490550886C7813931463EE929942B /* TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15119CB4EDECBA2CD40FD76A91324F8 /* TimeAgo.swift */; };
-		AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE772145D58F3C7603114884966B765B /* ParameterEncoding.swift */; };
-		B198F87E2DBF56FFCD7ABF2BE84DFD5C /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A6E9AA207A1FEB3842A30716024E6C /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92133843ED34C50C4090895102C40E12 /* MostPopularArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4BA62A30E6EE4E2882E6F7A4DC8957 /* MostPopularArticle.swift */; };
+		93E502B3F3AD1E56803BBB02F94ED01A /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8668A8B1DE0A9D372034C3D002FE5DC7 /* MoreView.xib */; };
+		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD28B0334A95B2A257CC5CC663DE3CB3 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94BC08D57633120968BF2DC787C900DE /* LoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA45BBCF631BB1E7FC284907CC90CB3 /* LoginCell.xib */; };
+		9BF27487EC8401E943675FA598541922 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72952F03857F1767A3FC8679575DCDBB /* AFIError.swift */; };
+		9C5F131F59EC522DBBAC2B1BA6D2E699 /* ParametersConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23C3C1E02FF70E4C12B4A0622F31A3 /* ParametersConstructor.swift */; };
+		9E51ED2BD2FEC7FA12334EF2F5D12E96 /* ContentWebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2C5C6B7D19A5906611877E554FA59 /* ContentWebViewCell.swift */; };
+		A0F3014CF11278C61D308D6A55B7B9B1 /* thumb-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 259E54C38407FD01C0328982D092AA09 /* thumb-down.png */; };
+		A56F96660836AD7406B2C5179D67D5A6 /* VuukleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6F92DE1E649632362EA97274552F0 /* VuukleInfo.swift */; };
+		A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9A27309A29D9CB00A825B770BBD88 /* SessionManager.swift */; };
+		A7E4293DB7956278F190470ABFEE7B20 /* smile-indifferent.png in Resources */ = {isa = PBXBuildFile; fileRef = 20C5801C5497AAC4EBE7422BF482A298 /* smile-indifferent.png */; };
+		AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24388C72778BD1F8B61FABAB5DD7ED39 /* ParameterEncoding.swift */; };
+		B198F87E2DBF56FFCD7ABF2BE84DFD5C /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D8B46EFA011230CC460BD1E1892EC9 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3FCCC199F1CCCE93E318C6B1FC72255 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B285A063A7E47F693C1878E6AF0C5BBA /* AlamofireImage.framework */; };
-		B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7580DE66B9DD9D4654566B261A76A70F /* ResponseSerialization.swift */; };
-		BCBAF79C2EFCCC00E2144C4982FDEF27 /* ParametersConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848730BAAA6CD8912CB468A2485A796D /* ParametersConstructor.swift */; };
-		BCBFBD52CDBB6765F38528541BB9D7C5 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74CD9D4157FA31B25939475CDE8A3E1 /* CommentViewController.swift */; };
-		BD709BDC546E14E464C1B5734496BD63 /* CommentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194C9C72D507F80A174127CA18D1B46 /* CommentForm.swift */; };
-		C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C521480A8D6C54D50B83BE94020FF3 /* ServerTrustPolicy.swift */; };
-		C26767A67242207B203B4CB4B7C8C76C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10D9ACE0AAF9635BB7307AFACACFC63 /* CommentCell.swift */; };
-		C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3C0F8F7E363A10BC08674C3935241 /* MultipartFormData.swift */; };
-		CB5BDB5B30BCA2064FB5F84ABDA085E6 /* EmoticonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8A16FC7AC207B733903D53E51107CC /* EmoticonCell.xib */; };
+		B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859208E6426C8E13364A318FFE07AFA2 /* ResponseSerialization.swift */; };
+		C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291A8F939668D519D65E86087D6357F /* ServerTrustPolicy.swift */; };
+		C118C150EF134A83046CD84B192D2F59 /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484642E65E8204FE29353014DEB2A5B /* Saver.swift */; };
+		C2020AD5940417D44CAF4EC3C3E07479 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BD46302E9269EF7CA882C84E78D5C876 /* facebook.png */; };
+		C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9D398A97B3F05819AC4F1631A0990 /* MultipartFormData.swift */; };
+		C93EF0E1A39EC656640667BB6D38821C /* LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64AA23DC9C2EB4E60EDA4EC5BC0E57 /* LoadMore.swift */; };
 		CEE1D5F4DB29BFDB125DB2A8D5C199A3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0335C5CE657148AB716E620DD2FE49EB /* Social.framework */; };
-		D854FB31D9E100E6C8D57041BE417012 /* MostPopularArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB1B3876919FE4C3BAF8CFBE45A40D /* MostPopularArticleCell.swift */; };
-		DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94492A2E83232B17D691DB51E6E88B /* Result.swift */; };
-		E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4FBA4102F4E000AE8E3E98BA3E439B /* TaskDelegate.swift */; };
-		E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBAE7887275537082782B2A6832913 /* DispatchQueue+Alamofire.swift */; };
-		E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266E3DB6E28BEB580AA56F7A4A06874 /* NetworkReachabilityManager.swift */; };
-		EAA561A34BFE125EF1966355A98F1C0A /* vuukle_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73F578010FCA3EDACC85BCDF366D9738 /* vuukle_logo.jpg */; };
+		D42C2D6F535B7B8B7BAF1D30C61309AD /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86BA30FAA5A5F11FC3A6BE113C14CDB /* CommentCell.xib */; };
+		D59787FA8C04938FAF59FFCF175F7866 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F667EA29D81B958A0EB8482733846E1 /* CommentViewController.swift */; };
+		D8A89D2A279F45BC89C31F3D449AC88D /* ResponseToComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B3D34199D030D91A512C2F6924B28 /* ResponseToComment.swift */; };
+		DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273DD9BF9EC8AE682D2C8954DDC2BB /* Result.swift */; };
+		E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71102660BB098DF736F73DCA1CFF72 /* TaskDelegate.swift */; };
+		E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A5C015D776134E05C06691D319796A /* DispatchQueue+Alamofire.swift */; };
+		E3A196F8855B0655A520D5E7AFDC8744 /* EmoteRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9661189342AC334D1EBB341AEDE91E38 /* EmoteRating.swift */; };
+		E4303A89F6D59DE4B9B65E96505CAC4C /* images-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D58A30458F4998E049E205A683A03762 /* images-2.png */; };
+		E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D574D5C57BF83307E6D13AA9A1BF9FF /* NetworkReachabilityManager.swift */; };
+		E5F9179C4F2819D36566E2FF8F77DCB3 /* smile-sad-full.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6AD45BB1B46AC232F52F125051002 /* smile-sad-full.png */; };
+		EB271BF515BD7ABA796ECD574D68A77F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF5BA4914D04DA4482457F705716BA /* WebView.swift */; };
 		EC68B61CE6B97B221ACB542C8A0CF2BC /* Pods-VuukleNestedCommentsExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDA1ADC263B5E6B3CDD693188DC86A6 /* Pods-VuukleNestedCommentsExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDDC637C677A2788AF6D737D14CBBC5C /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CAA2E11BFDA4049959D8448EA9C890 /* twitter.png */; };
-		EE97E27EDD8013C92A7AB8920C893716 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0AFC51B923FE1369E1F123BB49B870 /* AlamofireImage-dummy.m */; };
-		EF3891FBC5E399BA011973530F0AE5D4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358EF42A527990D94F2188DE3E6FF68 /* Image.swift */; };
-		F0C298A9D5D6E0B658F81E5AA4412969 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F373848AEF7C3F8B5A2E21E74D3623 /* NetworkManager.swift */; };
-		F1D97CB16D6BA23E1B7A337249DFFF0E /* CellConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08225A495703AB2ABB5A916DD77D82E5 /* CellConstructor.swift */; };
-		F7A4688DB945897697ED9FE1DF0EF48A /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4ABC891DBE7865488FCF4D4B0F575F /* Saver.swift */; };
-		FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE59D65653B0D8F673D31B19706BF645 /* Validation.swift */; };
+		EE795AC7E390C25911294F443AA3D278 /* Vuukle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4723DF9B98965AA9B752B39DDF1B575 /* Vuukle-dummy.m */; };
+		EE97E27EDD8013C92A7AB8920C893716 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA196439589FA2907579F6ED66D66A17 /* AlamofireImage-dummy.m */; };
+		EF3891FBC5E399BA011973530F0AE5D4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DEC0738C2D075FDF58DEC60F8C3096 /* Image.swift */; };
+		F0F34DA656D7533D96912103F606726A /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = B5308D71B9F1C4A7356600C2C90ED9B0 /* images.png */; };
+		F2A784B5CD3CC5200A64B34312B61BFE /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5A043EBEFB57E469E94234FFDA53F8 /* twitter.png */; };
+		F6C396C75FD45C228006773CD8D11865 /* ContentWebViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF0C72F19F20CEDABAA539781DC5C18A /* ContentWebViewCell.xib */; };
+		F76AE893FFA122966BE52F27385338EF /* CommentsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A602E69995D96E19C7F4EA11C6725B0 /* CommentsFeed.swift */; };
+		FD2FE8C2F2F42C68504086C95512F453 /* CellConstraintsConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBABD0A2DB33B102ECE5162422F495B8 /* CellConstraintsConstructor.swift */; };
+		FDBA208F78CEFF182A1EFAC96090A441 /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF435791287E20246DE1C308BFAC071 /* LoadMoreCell.swift */; };
+		FFB2824DF4F93702ADEDDC1C35917596 /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEC2677BAAC48024AF5D4FBBCE29C99 /* EmoticonCell.swift */; };
+		FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1291918DDFB4E2514B720BF90EA54E42 /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,125 +157,129 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00F5A22761ABEE8E4BB026B5415315A0 /* LoginForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginForm.swift; path = Vuukle/LoginForm.swift; sourceTree = "<group>"; };
+		0291A8F939668D519D65E86087D6357F /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		0335C5CE657148AB716E620DD2FE49EB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
-		050E9EA23E0F5E2B23F7207ACF900D89 /* MostPopularArticleCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MostPopularArticleCell.xib; path = Vuukle/MostPopularArticleCell.xib; sourceTree = "<group>"; };
-		081782CD7DA6B6328454CCF94045F70B /* ContentWebViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentWebViewCell.swift; path = Vuukle/ContentWebViewCell.swift; sourceTree = "<group>"; };
-		08225A495703AB2ABB5A916DD77D82E5 /* CellConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellConstructor.swift; path = Vuukle/CellConstructor.swift; sourceTree = "<group>"; };
-		0848DA3DBB35BBF2A653956628C588F9 /* LoadMore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadMore.swift; path = Vuukle/LoadMore.swift; sourceTree = "<group>"; };
+		03CAD8FD6C25B39283F125CB56DA4A53 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
 		0DDA1ADC263B5E6B3CDD693188DC86A6 /* Pods-VuukleNestedCommentsExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VuukleNestedCommentsExample-umbrella.h"; sourceTree = "<group>"; };
-		0F5F4F08F19569DE731821D263143710 /* ResponseToComment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseToComment.swift; path = Vuukle/ResponseToComment.swift; sourceTree = "<group>"; };
-		1266E3DB6E28BEB580AA56F7A4A06874 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		1C609BDB989FB06E8F918459E497B53D /* MostPopularArticle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MostPopularArticle.swift; path = Vuukle/MostPopularArticle.swift; sourceTree = "<group>"; };
-		21971E60FAC1D246062B5362C136EEF9 /* smile-happy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-happy.png"; path = "Vuukle/smile-happy.png"; sourceTree = "<group>"; };
-		229D2974B11295DA03C4977489211BDC /* Vuukle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vuukle-umbrella.h"; sourceTree = "<group>"; };
-		2392A11CFD40C51B7A501DE7FC6ACBA9 /* smile-indifferent.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-indifferent.png"; path = "Vuukle/smile-indifferent.png"; sourceTree = "<group>"; };
-		23AB75EC38FDA41D9DF8B1CFDF2705C8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		24B061BD0D585BBFF30266846ABB3EB4 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		24F373848AEF7C3F8B5A2E21E74D3623 /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Vuukle/NetworkManager.swift; sourceTree = "<group>"; };
+		0F0515450871E8A061870E4EFDFFADC2 /* thumb-up.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumb-up.png"; path = "Vuukle/thumb-up.png"; sourceTree = "<group>"; };
+		1291918DDFB4E2514B720BF90EA54E42 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		1FEC2677BAAC48024AF5D4FBBCE29C99 /* EmoticonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmoticonCell.swift; path = Vuukle/EmoticonCell.swift; sourceTree = "<group>"; };
+		20C5801C5497AAC4EBE7422BF482A298 /* smile-indifferent.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-indifferent.png"; path = "Vuukle/smile-indifferent.png"; sourceTree = "<group>"; };
+		24388C72778BD1F8B61FABAB5DD7ED39 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		25564412A578808746E25C908AC217A8 /* vuukle_logo.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; name = vuukle_logo.jpg; path = Vuukle/vuukle_logo.jpg; sourceTree = "<group>"; };
+		259E54C38407FD01C0328982D092AA09 /* thumb-down.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumb-down.png"; path = "Vuukle/thumb-down.png"; sourceTree = "<group>"; };
 		2703EA707D5C9078C75A508B292EF395 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		277B80E84EDFB59FE9E7C0DC4509BE75 /* Pods-VuukleNestedCommentsExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VuukleNestedCommentsExample-frameworks.sh"; sourceTree = "<group>"; };
-		2A72C9C1DA9D9A1356C97CF85D8468C2 /* facebook.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = facebook.png; path = Vuukle/facebook.png; sourceTree = "<group>"; };
-		2D0AFC51B923FE1369E1F123BB49B870 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
+		2851FBD63EBA93BEA0267C25B7EF7F3E /* MoreView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoreView.swift; path = Vuukle/MoreView.swift; sourceTree = "<group>"; };
+		2D574D5C57BF83307E6D13AA9A1BF9FF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		2D59A12C438CEB7572FB12FC537261FD /* Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Vuukle/Global.swift; sourceTree = "<group>"; };
 		2D78D5C7C7AC054B749A24AE756CBDF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30432CE5D0A1B3F01AED6B0269CA5999 /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
-		342B3260C76259D529A7FB1E66050049 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
-		36C521480A8D6C54D50B83BE94020FF3 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		3728BA62BCB135B5380C9587B1998DEA /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
-		3E3F102FBB45BC45F26C464B96C1C062 /* images-2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "images-2.png"; path = "Vuukle/images-2.png"; sourceTree = "<group>"; };
-		3F4FBA4102F4E000AE8E3E98BA3E439B /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		3FF54CBB81E8435BE391320BEB75A459 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		45CFA142551E9D42D1823393A223216A /* smile-excited.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-excited.png"; path = "Vuukle/smile-excited.png"; sourceTree = "<group>"; };
+		2EBA16E095E16B5D450C560B6B8961CB /* MostPopularArticleCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MostPopularArticleCell.xib; path = Vuukle/MostPopularArticleCell.xib; sourceTree = "<group>"; };
+		2EBF5BA4914D04DA4482457F705716BA /* WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebView.swift; path = Vuukle/WebView.swift; sourceTree = "<group>"; };
+		2F667EA29D81B958A0EB8482733846E1 /* CommentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentViewController.swift; path = Vuukle/CommentViewController.swift; sourceTree = "<group>"; };
+		30ED7612635F0C9A7257662A8912533C /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Vuukle/NetworkManager.swift; sourceTree = "<group>"; };
+		33125CD42D30C23793258FBCC4C2C8B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DEC0738C2D075FDF58DEC60F8C3096 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
+		3484642E65E8204FE29353014DEB2A5B /* Saver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Saver.swift; path = Vuukle/Saver.swift; sourceTree = "<group>"; };
+		3972B09C1F41AC01256FC2AA38349725 /* TimeAgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeAgo.swift; path = Vuukle/TimeAgo.swift; sourceTree = "<group>"; };
+		3B8F01E792EFAD94265050E84D3820FB /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
+		3C3CFD3518AAC53275E640409345EDBB /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		3E7F70BAF9C950C213EBFC40C2E6D857 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B44A908773C2653351748969C40903 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
+		42C39175774F449B8B7FF13A9C447592 /* WebViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = WebViewCell.xib; path = Vuukle/WebViewCell.xib; sourceTree = "<group>"; };
+		4313CF622CD55E366970D95847541813 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		487B20A45CBD1E022DBC5EED82917688 /* Pods-VuukleNestedCommentsExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VuukleNestedCommentsExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		487CF4D14C603FE44D9697858703B7C7 /* WebViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = WebViewCell.xib; path = Vuukle/WebViewCell.xib; sourceTree = "<group>"; };
-		49F8B62B4AB16C216CE9FAA97D5DC1B8 /* 122.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = 122.png; path = Vuukle/122.png; sourceTree = "<group>"; };
-		49FE76264C07C05CA6F23342C13ADF98 /* Emoticon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emoticon.swift; path = Vuukle/Emoticon.swift; sourceTree = "<group>"; };
-		4A36725F70E66FEA4432C8686685DD1E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		4C68E619100F5DADDB86BEA63EB105A0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		4D1E80D637A38DC1A06EF3E1D960A2F3 /* Pods-VuukleNestedCommentsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VuukleNestedCommentsExample.release.xcconfig"; sourceTree = "<group>"; };
-		4D94492A2E83232B17D691DB51E6E88B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		4EAB2B4E9C2CE11DFA44A943956CDB4C /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		4F39614993E6DFF319C265059F08BD0F /* smile-sad-full.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-sad-full.png"; path = "Vuukle/smile-sad-full.png"; sourceTree = "<group>"; };
-		528E600F238A6FB9BB230B03D36FBE56 /* thumb-down.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumb-down.png"; path = "Vuukle/thumb-down.png"; sourceTree = "<group>"; };
-		529E789E3A43DC0416D5EF3CFEF04C87 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		532871D487BA9E965B0188E18034D26F /* ResponseToEmoteRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseToEmoteRating.swift; path = Vuukle/ResponseToEmoteRating.swift; sourceTree = "<group>"; };
+		500C95EF166FD5C44693404CDBC57C98 /* CommentsBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentsBuilder.swift; path = Vuukle/CommentsBuilder.swift; sourceTree = "<group>"; };
+		5371A0FC94385ACFC5CAB7B23F8776AA /* Vuukle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vuukle-prefix.pch"; sourceTree = "<group>"; };
+		54B5CF92E6570A5E90652596D2D66D20 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
+		5733582AD200641AA09097412AAFD920 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5838B28163DF7C103A58467E30129E61 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		58571BEB3F876F6C519927C60F572DC7 /* smile-happy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-happy.png"; path = "Vuukle/smile-happy.png"; sourceTree = "<group>"; };
+		5A64AA23DC9C2EB4E60EDA4EC5BC0E57 /* LoadMore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadMore.swift; path = Vuukle/LoadMore.swift; sourceTree = "<group>"; };
 		5C78C6D0F956EB6D701078B509E7C3C3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EF798D1F5DCB52C3FE00A6BAF104A00 /* Vuukle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Vuukle.modulemap; sourceTree = "<group>"; };
-		5F6CF320022B161D00F72E786D29A5F1 /* thumb-up.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumb-up.png"; path = "Vuukle/thumb-up.png"; sourceTree = "<group>"; };
+		5E4BA62A30E6EE4E2882E6F7A4DC8957 /* MostPopularArticle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MostPopularArticle.swift; path = Vuukle/MostPopularArticle.swift; sourceTree = "<group>"; };
 		60130CC152670667BDF9061672C598B8 /* Pods-VuukleNestedCommentsExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VuukleNestedCommentsExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		6065329D02B639047B22307E5A7BC228 /* AddCommentCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AddCommentCell.xib; path = Vuukle/AddCommentCell.xib; sourceTree = "<group>"; };
 		627970906DB4731FFFD3C4D876110CDC /* Vuukle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vuukle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		628E301C42C36BA6807BC5022858B996 /* Solid_gray.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Solid_gray.png; path = Vuukle/Solid_gray.png; sourceTree = "<group>"; };
-		63A6E9AA207A1FEB3842A30716024E6C /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
-		67B2134C577C6F37355C134CAB4936E1 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		6897E4A6F0C7F42DA26CEB67002AFD09 /* MoreView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoreView.swift; path = Vuukle/MoreView.swift; sourceTree = "<group>"; };
-		69BDD4E7F7C4E62891C049517A99758A /* ReplyForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplyForm.swift; path = Vuukle/ReplyForm.swift; sourceTree = "<group>"; };
-		6BF4D688F0702E0E3C564E0A2A038D2C /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
-		711B3AB0328C70657FD52227281940EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73F578010FCA3EDACC85BCDF366D9738 /* vuukle_logo.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; name = vuukle_logo.jpg; path = Vuukle/vuukle_logo.jpg; sourceTree = "<group>"; };
-		74A17D1077AEF927B2EB743AF2FADF77 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
-		7580DE66B9DD9D4654566B261A76A70F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		7AD737A5944F13DA822F72605951BC17 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
-		7AF2D5F7D0C2B5862D364FBA6997841A /* AddCommentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddCommentCell.swift; path = Vuukle/AddCommentCell.swift; sourceTree = "<group>"; };
-		7FBD06D5937305A1EE612E290975D231 /* VuukleInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VuukleInfo.swift; path = Vuukle/VuukleInfo.swift; sourceTree = "<group>"; };
-		848730BAAA6CD8912CB468A2485A796D /* ParametersConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParametersConstructor.swift; path = Vuukle/ParametersConstructor.swift; sourceTree = "<group>"; };
+		62802BA42130ED01C3B1D805BDB4F3D6 /* non_secure.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = non_secure.html; path = Vuukle/non_secure.html; sourceTree = "<group>"; };
+		69A8B04B5D438D55232A8DBDA4EC1FFE /* LoadMoreCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadMoreCell.xib; path = Vuukle/LoadMoreCell.xib; sourceTree = "<group>"; };
+		6B4E9FEE7C65591A0B4166D55E3CFAD7 /* LoginCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginCell.swift; path = Vuukle/LoginCell.swift; sourceTree = "<group>"; };
+		6D52640BE666B1180B74BD5EC4387CA9 /* MostPopularArticleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MostPopularArticleCell.swift; path = Vuukle/MostPopularArticleCell.swift; sourceTree = "<group>"; };
+		716886C8D20DCECBD47D9420DEADAC0D /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		71F2C5C6B7D19A5906611877E554FA59 /* ContentWebViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentWebViewCell.swift; path = Vuukle/ContentWebViewCell.swift; sourceTree = "<group>"; };
+		7246B0B998801F108A1FCC8E57B0157E /* CommentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = Vuukle/CommentCell.swift; sourceTree = "<group>"; };
+		72952F03857F1767A3FC8679575DCDBB /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
+		7492FEF7FAFE95173BF8004DF823B742 /* Vuukle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vuukle.xcconfig; sourceTree = "<group>"; };
+		771F1EC78432FE297C7A17C6CE378324 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Vuukle/Main.storyboard; sourceTree = "<group>"; };
+		774FB8FD7D24AF2AC1F1E001C358B770 /* EmoticonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EmoticonCell.xib; path = Vuukle/EmoticonCell.xib; sourceTree = "<group>"; };
+		7B23C3C1E02FF70E4C12B4A0622F31A3 /* ParametersConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParametersConstructor.swift; path = Vuukle/ParametersConstructor.swift; sourceTree = "<group>"; };
+		7C36A85F2EDEA462A6AB46497A93E389 /* 122.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = 122.png; path = Vuukle/122.png; sourceTree = "<group>"; };
+		7D5B3D34199D030D91A512C2F6924B28 /* ResponseToComment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseToComment.swift; path = Vuukle/ResponseToComment.swift; sourceTree = "<group>"; };
+		7DA1C92E5F4E839BDB846B01CEC9011D /* LoginView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Vuukle/LoginView.swift; sourceTree = "<group>"; };
+		859208E6426C8E13364A318FFE07AFA2 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		85C2F570FC39E21FE0B911A518A7F597 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		8668A8B1DE0A9D372034C3D002FE5DC7 /* MoreView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MoreView.xib; path = Vuukle/MoreView.xib; sourceTree = "<group>"; };
 		86D4A2095AABDB524BB667A55D4EC247 /* Pods-VuukleNestedCommentsExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VuukleNestedCommentsExample-resources.sh"; sourceTree = "<group>"; };
-		8EC7230A22AF2F2E3690236272C664FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89273DD9BF9EC8AE682D2C8954DDC2BB /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		8AA45BBCF631BB1E7FC284907CC90CB3 /* LoginCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoginCell.xib; path = Vuukle/LoginCell.xib; sourceTree = "<group>"; };
+		8C23CA29D4E26E17D4A87499FF071B8F /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
+		8DF435791287E20246DE1C308BFAC071 /* LoadMoreCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadMoreCell.swift; path = Vuukle/LoadMoreCell.swift; sourceTree = "<group>"; };
+		90B9A27309A29D9CB00A825B770BBD88 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93E04109451B5D42F454D4B51B1BB33D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		942A960AD51F5130FEA7997BDF5EF8AB /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		989F236A58FB4CB6C84D90E8F005B35B /* EmoticonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmoticonCell.swift; path = Vuukle/EmoticonCell.swift; sourceTree = "<group>"; };
-		98FBAE7887275537082782B2A6832913 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		99A1437DDB4AB6AC735D06FBD6267E9F /* Vuukle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vuukle.xcconfig; sourceTree = "<group>"; };
-		9B16176956B29AE36E4ED4DAD2482FC0 /* CommentsFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentsFeed.swift; path = Vuukle/CommentsFeed.swift; sourceTree = "<group>"; };
-		9E2BE3B3777C49D5CD4D932392EAEABC /* TotalCommentsCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TotalCommentsCount.swift; path = Vuukle/TotalCommentsCount.swift; sourceTree = "<group>"; };
-		9F47AAE9DCDD50EA24B9CE73588A3B8C /* MoreView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MoreView.xib; path = Vuukle/MoreView.xib; sourceTree = "<group>"; };
-		A0D3C0F8F7E363A10BC08674C3935241 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		A1254299B9D7C6531C801504BB812911 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		A194C9C72D507F80A174127CA18D1B46 /* CommentForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentForm.swift; path = Vuukle/CommentForm.swift; sourceTree = "<group>"; };
-		A1BC29A25AD73CD34B10C0998C020484 /* WebViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewCell.swift; path = Vuukle/WebViewCell.swift; sourceTree = "<group>"; };
-		A2A7E79A5C3204431110A7D5A5B90F1C /* LoadMoreCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadMoreCell.swift; path = Vuukle/LoadMoreCell.swift; sourceTree = "<group>"; };
+		9661189342AC334D1EBB341AEDE91E38 /* EmoteRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmoteRating.swift; path = Vuukle/EmoteRating.swift; sourceTree = "<group>"; };
+		96AA77CE1C6BD9C02C0D963024E3F93B /* smile-excited.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-excited.png"; path = "Vuukle/smile-excited.png"; sourceTree = "<group>"; };
+		9A52DAE93A9F32316617508E5761B0DA /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		9A602E69995D96E19C7F4EA11C6725B0 /* CommentsFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentsFeed.swift; path = Vuukle/CommentsFeed.swift; sourceTree = "<group>"; };
+		9C7FE9988FA8786528B3462B7B77FA1F /* CellConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellConstructor.swift; path = Vuukle/CellConstructor.swift; sourceTree = "<group>"; };
+		9E1F45BB5528168DE46400A6DE649C89 /* TotalCommentsCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TotalCommentsCount.swift; path = Vuukle/TotalCommentsCount.swift; sourceTree = "<group>"; };
+		A29FC90C72A267182571E3F1A20F1440 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		A2D8C8763DBE659BEB14B358ACAD5277 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A3C7E2DA9A94E7EBD96CCF6DA5B8F285 /* Solid_gray.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Solid_gray.png; path = Vuukle/Solid_gray.png; sourceTree = "<group>"; };
 		A4266E28D73625DCBD760C232357410A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D8B46EFA011230CC460BD1E1892EC9 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
+		A5209153DE97842937608C6C19A9A2B6 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
+		A9FA2CCBED1CFB05BB76184AE51597D5 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		AA196439589FA2907579F6ED66D66A17 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
 		ADF5169E5AE979299478B572683486B5 /* Pods-VuukleNestedCommentsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VuukleNestedCommentsExample.debug.xcconfig"; sourceTree = "<group>"; };
-		AE73E104537E6D4E1D4DAE50ED138C60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE772145D58F3C7603114884966B765B /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		AF240DF50BDF50A33BC6F2EE1346540A /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
-		AF9DDA8A1EA023B6FD72D147E37D29A6 /* WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebView.swift; path = Vuukle/WebView.swift; sourceTree = "<group>"; };
-		B10D9ACE0AAF9635BB7307AFACACFC63 /* CommentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = Vuukle/CommentCell.swift; sourceTree = "<group>"; };
+		AE70AD20C44E34B9CBE1F4EE50D6C185 /* Vuukle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Vuukle.modulemap; sourceTree = "<group>"; };
 		B167E366110931296E1320CA53C57ED9 /* Pods-VuukleNestedCommentsExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VuukleNestedCommentsExample-dummy.m"; sourceTree = "<group>"; };
+		B2451F410585414A8F03640C33EEAF24 /* ResponseToEmoteRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseToEmoteRating.swift; path = Vuukle/ResponseToEmoteRating.swift; sourceTree = "<group>"; };
 		B285A063A7E47F693C1878E6AF0C5BBA /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2E895233351C8B6437105044BE4503C /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
-		B48DFCED1108348CEF7F1F7A611D70AD /* smile-angry.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-angry.png"; path = "Vuukle/smile-angry.png"; sourceTree = "<group>"; };
-		B74CD9D4157FA31B25939475CDE8A3E1 /* CommentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentViewController.swift; path = Vuukle/CommentViewController.swift; sourceTree = "<group>"; };
-		B823A6E4347D33F2859007C6FD828278 /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
+		B5308D71B9F1C4A7356600C2C90ED9B0 /* images.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = images.png; path = Vuukle/images.png; sourceTree = "<group>"; };
+		B60B2E5F6EB820ED3FBC793375934FB6 /* smile-angry.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-angry.png"; path = "Vuukle/smile-angry.png"; sourceTree = "<group>"; };
+		B64918E6B936E82C7876F2F624275184 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 		BBC855565A96117CA985D2BA21212FA2 /* Pods-VuukleNestedCommentsExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VuukleNestedCommentsExample.modulemap"; sourceTree = "<group>"; };
-		BE59D65653B0D8F673D31B19706BF645 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		BEE04F253BFE392D0A629E06B5EB338D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		C42A483F10E652783D217770A5729B43 /* CommentCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CommentCell.xib; path = Vuukle/CommentCell.xib; sourceTree = "<group>"; };
-		C53590D922AC1F40FCB4D117A994008C /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		C6CAA2E11BFDA4049959D8448EA9C890 /* twitter.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = twitter.png; path = Vuukle/twitter.png; sourceTree = "<group>"; };
-		CA20F22A9133E6689BDF5DB413EF17F0 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		BD46302E9269EF7CA882C84E78D5C876 /* facebook.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = facebook.png; path = Vuukle/facebook.png; sourceTree = "<group>"; };
+		C4723DF9B98965AA9B752B39DDF1B575 /* Vuukle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Vuukle-dummy.m"; sourceTree = "<group>"; };
+		C4FDC4FA66154355DCED4FF582FD67A3 /* WebViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewCell.swift; path = Vuukle/WebViewCell.swift; sourceTree = "<group>"; };
+		CAE665BCBCF68EDB9837F34B86552800 /* LocalCommentsConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalCommentsConstructor.swift; path = Vuukle/LocalCommentsConstructor.swift; sourceTree = "<group>"; };
 		CB30275F2F6559AE220B65A0D701DA93 /* Pods_VuukleNestedCommentsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VuukleNestedCommentsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC47165DAFA3660629408EDAE9F49147 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		CCA6F684C785F6AE4ACC70E01DB121BA /* non_secure.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = non_secure.html; path = Vuukle/non_secure.html; sourceTree = "<group>"; };
-		D15119CB4EDECBA2CD40FD76A91324F8 /* TimeAgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeAgo.swift; path = Vuukle/TimeAgo.swift; sourceTree = "<group>"; };
-		D1EEAF54127D5CA71C72ABD1183FB382 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
-		D64A55214CDACD16B8F38D3934E49CFD /* CommentsBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentsBuilder.swift; path = Vuukle/CommentsBuilder.swift; sourceTree = "<group>"; };
-		D765BDF58190652A21527D8E087FF00E /* EmoteRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmoteRating.swift; path = Vuukle/EmoteRating.swift; sourceTree = "<group>"; };
-		D7C9E22CF306D93E360E217E6E47FEDC /* LocalCommentsConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalCommentsConstructor.swift; path = Vuukle/LocalCommentsConstructor.swift; sourceTree = "<group>"; };
-		D8E774976E5DCDD25E8548F5F09BA06B /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Vuukle/Main.storyboard; sourceTree = "<group>"; };
-		D93B0C87187D3489FA704D221C73C73C /* images.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = images.png; path = Vuukle/images.png; sourceTree = "<group>"; };
-		D96DDB1C96EA85140474D708D05E59C3 /* Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Vuukle/Global.swift; sourceTree = "<group>"; };
-		DCE4C96C5D0C5910F64134DEDD61DE51 /* CellConstraintsConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellConstraintsConstructor.swift; path = Vuukle/CellConstraintsConstructor.swift; sourceTree = "<group>"; };
-		E00B3881DB7801B0F7CCF15F92C2F007 /* Vuukle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vuukle-prefix.pch"; sourceTree = "<group>"; };
-		E5EB1B3876919FE4C3BAF8CFBE45A40D /* MostPopularArticleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MostPopularArticleCell.swift; path = Vuukle/MostPopularArticleCell.swift; sourceTree = "<group>"; };
-		E67C87CB8001312D47240AACBEE816D5 /* Vuukle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Vuukle-dummy.m"; sourceTree = "<group>"; };
-		E914B4865C98BF36F15943CB1CCF2433 /* LoadMoreCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadMoreCell.xib; path = Vuukle/LoadMoreCell.xib; sourceTree = "<group>"; };
-		F1553D7D45E8DFCC96C22FC5E99D9ECC /* ContentWebViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ContentWebViewCell.xib; path = Vuukle/ContentWebViewCell.xib; sourceTree = "<group>"; };
-		F358EF42A527990D94F2188DE3E6FF68 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
-		F4427E7A6D9E86C9D9F941E24BE707FC /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		F82B9B42E32E42B55EE1AC6728AD1351 /* smile-amused.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-amused.png"; path = "Vuukle/smile-amused.png"; sourceTree = "<group>"; };
-		FA4ABC891DBE7865488FCF4D4B0F575F /* Saver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Saver.swift; path = Vuukle/Saver.swift; sourceTree = "<group>"; };
-		FB8A16FC7AC207B733903D53E51107CC /* EmoticonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EmoticonCell.xib; path = Vuukle/EmoticonCell.xib; sourceTree = "<group>"; };
-		FDF79432AC0BD29EB82E4DD69893F248 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Vuukle/AppDelegate.swift; sourceTree = "<group>"; };
+		CB4CC1161C7D24D4DDA8F4963BF684E4 /* smile-amused.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-amused.png"; path = "Vuukle/smile-amused.png"; sourceTree = "<group>"; };
+		CB5A058F6828D492071A70CFE22790E3 /* LoginView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoginView.xib; path = Vuukle/LoginView.xib; sourceTree = "<group>"; };
+		CD28B0334A95B2A257CC5CC663DE3CB3 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		CD5A043EBEFB57E469E94234FFDA53F8 /* twitter.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = twitter.png; path = Vuukle/twitter.png; sourceTree = "<group>"; };
+		D0A6AD45BB1B46AC232F52F125051002 /* smile-sad-full.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile-sad-full.png"; path = "Vuukle/smile-sad-full.png"; sourceTree = "<group>"; };
+		D0FF7CE29FE253855321384D899A96D8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		D58A30458F4998E049E205A683A03762 /* images-2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "images-2.png"; path = "Vuukle/images-2.png"; sourceTree = "<group>"; };
+		D6B9D398A97B3F05819AC4F1631A0990 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		D86BA30FAA5A5F11FC3A6BE113C14CDB /* CommentCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CommentCell.xib; path = Vuukle/CommentCell.xib; sourceTree = "<group>"; };
+		D8A5C015D776134E05C06691D319796A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		DBABD0A2DB33B102ECE5162422F495B8 /* CellConstraintsConstructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellConstraintsConstructor.swift; path = Vuukle/CellConstraintsConstructor.swift; sourceTree = "<group>"; };
+		DCD55962A6A38AF1422454EE23112F2B /* Emoticon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emoticon.swift; path = Vuukle/Emoticon.swift; sourceTree = "<group>"; };
+		DDBC8E31BBE47F0F0FAAB78580B12972 /* Vuukle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vuukle-umbrella.h"; sourceTree = "<group>"; };
+		E09FCEE10092226A953570F29E0CDD48 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		E6F403E738FD34F452B10EA7C7A42E07 /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
+		E71923CDE4AD8FA56E517B804CD07CDC /* CommentForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentForm.swift; path = Vuukle/CommentForm.swift; sourceTree = "<group>"; };
+		E82EB4BB7FA731D5997801375F244A7C /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		EB9FE1F56A0147CAE0A951A49A3C713F /* AddCommentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddCommentCell.swift; path = Vuukle/AddCommentCell.swift; sourceTree = "<group>"; };
+		F3921C2E7C0DA2B7893C04BC59C8C858 /* AddCommentCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AddCommentCell.xib; path = Vuukle/AddCommentCell.xib; sourceTree = "<group>"; };
+		F48C0532EA705F4530388C99319BB00A /* ReplyForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplyForm.swift; path = Vuukle/ReplyForm.swift; sourceTree = "<group>"; };
+		F9B6F92DE1E649632362EA97274552F0 /* VuukleInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VuukleInfo.swift; path = Vuukle/VuukleInfo.swift; sourceTree = "<group>"; };
+		FD71102660BB098DF736F73DCA1CFF72 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		FF0C72F19F20CEDABAA539781DC5C18A /* ContentWebViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ContentWebViewCell.xib; path = Vuukle/ContentWebViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +322,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A51B05314D84A30605D02CB949FA616 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5838B28163DF7C103A58467E30129E61 /* Alamofire.modulemap */,
+				E09FCEE10092226A953570F29E0CDD48 /* Alamofire.xcconfig */,
+				D0FF7CE29FE253855321384D899A96D8 /* Alamofire-dummy.m */,
+				9A52DAE93A9F32316617508E5761B0DA /* Alamofire-prefix.pch */,
+				CD28B0334A95B2A257CC5CC663DE3CB3 /* Alamofire-umbrella.h */,
+				3E7F70BAF9C950C213EBFC40C2E6D857 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		1496AB9D0D7B0B7DABD98244C1740CF2 /* Vuukle */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FE1F56A0147CAE0A951A49A3C713F /* AddCommentCell.swift */,
+				DBABD0A2DB33B102ECE5162422F495B8 /* CellConstraintsConstructor.swift */,
+				9C7FE9988FA8786528B3462B7B77FA1F /* CellConstructor.swift */,
+				7246B0B998801F108A1FCC8E57B0157E /* CommentCell.swift */,
+				E71923CDE4AD8FA56E517B804CD07CDC /* CommentForm.swift */,
+				500C95EF166FD5C44693404CDBC57C98 /* CommentsBuilder.swift */,
+				9A602E69995D96E19C7F4EA11C6725B0 /* CommentsFeed.swift */,
+				2F667EA29D81B958A0EB8482733846E1 /* CommentViewController.swift */,
+				71F2C5C6B7D19A5906611877E554FA59 /* ContentWebViewCell.swift */,
+				9661189342AC334D1EBB341AEDE91E38 /* EmoteRating.swift */,
+				DCD55962A6A38AF1422454EE23112F2B /* Emoticon.swift */,
+				1FEC2677BAAC48024AF5D4FBBCE29C99 /* EmoticonCell.swift */,
+				2D59A12C438CEB7572FB12FC537261FD /* Global.swift */,
+				5A64AA23DC9C2EB4E60EDA4EC5BC0E57 /* LoadMore.swift */,
+				8DF435791287E20246DE1C308BFAC071 /* LoadMoreCell.swift */,
+				CAE665BCBCF68EDB9837F34B86552800 /* LocalCommentsConstructor.swift */,
+				6B4E9FEE7C65591A0B4166D55E3CFAD7 /* LoginCell.swift */,
+				00F5A22761ABEE8E4BB026B5415315A0 /* LoginForm.swift */,
+				7DA1C92E5F4E839BDB846B01CEC9011D /* LoginView.swift */,
+				2851FBD63EBA93BEA0267C25B7EF7F3E /* MoreView.swift */,
+				5E4BA62A30E6EE4E2882E6F7A4DC8957 /* MostPopularArticle.swift */,
+				6D52640BE666B1180B74BD5EC4387CA9 /* MostPopularArticleCell.swift */,
+				30ED7612635F0C9A7257662A8912533C /* NetworkManager.swift */,
+				7B23C3C1E02FF70E4C12B4A0622F31A3 /* ParametersConstructor.swift */,
+				F48C0532EA705F4530388C99319BB00A /* ReplyForm.swift */,
+				7D5B3D34199D030D91A512C2F6924B28 /* ResponseToComment.swift */,
+				B2451F410585414A8F03640C33EEAF24 /* ResponseToEmoteRating.swift */,
+				3484642E65E8204FE29353014DEB2A5B /* Saver.swift */,
+				3972B09C1F41AC01256FC2AA38349725 /* TimeAgo.swift */,
+				9E1F45BB5528168DE46400A6DE649C89 /* TotalCommentsCount.swift */,
+				F9B6F92DE1E649632362EA97274552F0 /* VuukleInfo.swift */,
+				2EBF5BA4914D04DA4482457F705716BA /* WebView.swift */,
+				C4FDC4FA66154355DCED4FF582FD67A3 /* WebViewCell.swift */,
+				4C50A0BE473451167B68B615899091E4 /* Resources */,
+				34896F625051F1DD79284078415ACB0E /* Support Files */,
+			);
+			path = Vuukle;
+			sourceTree = "<group>";
+		};
 		1CAC83418AB94FD1DBBC66B75B135D4F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,31 +389,62 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4FB444D830973CE1467B13014F12D038 /* Pods */ = {
+		34896F625051F1DD79284078415ACB0E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA053F877392C5511E8E7F0E788765D4 /* Alamofire */,
-				5995BAC9EDC6BCE3C7DC6ECD97413C61 /* AlamofireImage */,
-				D54F51E0E619C95172EBFF80B301A94E /* Vuukle */,
+				33125CD42D30C23793258FBCC4C2C8B3 /* Info.plist */,
+				AE70AD20C44E34B9CBE1F4EE50D6C185 /* Vuukle.modulemap */,
+				7492FEF7FAFE95173BF8004DF823B742 /* Vuukle.xcconfig */,
+				C4723DF9B98965AA9B752B39DDF1B575 /* Vuukle-dummy.m */,
+				5371A0FC94385ACFC5CAB7B23F8776AA /* Vuukle-prefix.pch */,
+				DDBC8E31BBE47F0F0FAAB78580B12972 /* Vuukle-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Vuukle";
+			sourceTree = "<group>";
+		};
+		42EDDE921BCFE16C6939955161A4E360 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A96E757C14B27E02D5D8D6605159B43F /* Alamofire */,
+				7D7B7E759E4F5E28B07DB41D75CCC5F1 /* AlamofireImage */,
+				1496AB9D0D7B0B7DABD98244C1740CF2 /* Vuukle */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5995BAC9EDC6BCE3C7DC6ECD97413C61 /* AlamofireImage */ = {
+		4C50A0BE473451167B68B615899091E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D1EEAF54127D5CA71C72ABD1183FB382 /* AFIError.swift */,
-				F358EF42A527990D94F2188DE3E6FF68 /* Image.swift */,
-				B2E895233351C8B6437105044BE4503C /* ImageCache.swift */,
-				CA20F22A9133E6689BDF5DB413EF17F0 /* ImageDownloader.swift */,
-				74A17D1077AEF927B2EB743AF2FADF77 /* ImageFilter.swift */,
-				B823A6E4347D33F2859007C6FD828278 /* Request+AlamofireImage.swift */,
-				30432CE5D0A1B3F01AED6B0269CA5999 /* UIButton+AlamofireImage.swift */,
-				342B3260C76259D529A7FB1E66050049 /* UIImage+AlamofireImage.swift */,
-				3728BA62BCB135B5380C9587B1998DEA /* UIImageView+AlamofireImage.swift */,
-				CD4687CF1161C1119BBEDC207340E710 /* Support Files */,
+				7C36A85F2EDEA462A6AB46497A93E389 /* 122.png */,
+				F3921C2E7C0DA2B7893C04BC59C8C858 /* AddCommentCell.xib */,
+				D86BA30FAA5A5F11FC3A6BE113C14CDB /* CommentCell.xib */,
+				FF0C72F19F20CEDABAA539781DC5C18A /* ContentWebViewCell.xib */,
+				774FB8FD7D24AF2AC1F1E001C358B770 /* EmoticonCell.xib */,
+				BD46302E9269EF7CA882C84E78D5C876 /* facebook.png */,
+				B5308D71B9F1C4A7356600C2C90ED9B0 /* images.png */,
+				D58A30458F4998E049E205A683A03762 /* images-2.png */,
+				69A8B04B5D438D55232A8DBDA4EC1FFE /* LoadMoreCell.xib */,
+				8AA45BBCF631BB1E7FC284907CC90CB3 /* LoginCell.xib */,
+				CB5A058F6828D492071A70CFE22790E3 /* LoginView.xib */,
+				771F1EC78432FE297C7A17C6CE378324 /* Main.storyboard */,
+				8668A8B1DE0A9D372034C3D002FE5DC7 /* MoreView.xib */,
+				2EBA16E095E16B5D450C560B6B8961CB /* MostPopularArticleCell.xib */,
+				62802BA42130ED01C3B1D805BDB4F3D6 /* non_secure.html */,
+				CB4CC1161C7D24D4DDA8F4963BF684E4 /* smile-amused.png */,
+				B60B2E5F6EB820ED3FBC793375934FB6 /* smile-angry.png */,
+				96AA77CE1C6BD9C02C0D963024E3F93B /* smile-excited.png */,
+				58571BEB3F876F6C519927C60F572DC7 /* smile-happy.png */,
+				20C5801C5497AAC4EBE7422BF482A298 /* smile-indifferent.png */,
+				D0A6AD45BB1B46AC232F52F125051002 /* smile-sad-full.png */,
+				A3C7E2DA9A94E7EBD96CCF6DA5B8F285 /* Solid_gray.png */,
+				259E54C38407FD01C0328982D092AA09 /* thumb-down.png */,
+				0F0515450871E8A061870E4EFDFFADC2 /* thumb-up.png */,
+				CD5A043EBEFB57E469E94234FFDA53F8 /* twitter.png */,
+				25564412A578808746E25C908AC217A8 /* vuukle_logo.jpg */,
+				42C39175774F449B8B7FF13A9C447592 /* WebViewCell.xib */,
 			);
-			path = AlamofireImage;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		750843B2353729BA61A6255FDC2DEB73 /* iOS */ = {
@@ -361,154 +456,71 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7D7B7E759E4F5E28B07DB41D75CCC5F1 /* AlamofireImage */ = {
+			isa = PBXGroup;
+			children = (
+				72952F03857F1767A3FC8679575DCDBB /* AFIError.swift */,
+				33DEC0738C2D075FDF58DEC60F8C3096 /* Image.swift */,
+				03CAD8FD6C25B39283F125CB56DA4A53 /* ImageCache.swift */,
+				A9FA2CCBED1CFB05BB76184AE51597D5 /* ImageDownloader.swift */,
+				B64918E6B936E82C7876F2F624275184 /* ImageFilter.swift */,
+				3B8F01E792EFAD94265050E84D3820FB /* Request+AlamofireImage.swift */,
+				8C23CA29D4E26E17D4A87499FF071B8F /* UIButton+AlamofireImage.swift */,
+				41B44A908773C2653351748969C40903 /* UIImage+AlamofireImage.swift */,
+				4313CF622CD55E366970D95847541813 /* UIImageView+AlamofireImage.swift */,
+				A3AF1B2C08E0F76329C2633DC4B0217F /* Support Files */,
+			);
+			path = AlamofireImage;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				FFAADC6F5D2F45C178165F5B86A4A1C2 /* Frameworks */,
-				4FB444D830973CE1467B13014F12D038 /* Pods */,
+				42EDDE921BCFE16C6939955161A4E360 /* Pods */,
 				1CAC83418AB94FD1DBBC66B75B135D4F /* Products */,
 				E9074B7BBF396FE017A9B74CFCAE8E03 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A708A720715656DDE9A8F00EF35BCB7B /* Support Files */ = {
+		A3AF1B2C08E0F76329C2633DC4B0217F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BEE04F253BFE392D0A629E06B5EB338D /* Alamofire.modulemap */,
-				C53590D922AC1F40FCB4D117A994008C /* Alamofire.xcconfig */,
-				23AB75EC38FDA41D9DF8B1CFDF2705C8 /* Alamofire-dummy.m */,
-				529E789E3A43DC0416D5EF3CFEF04C87 /* Alamofire-prefix.pch */,
-				4A36725F70E66FEA4432C8686685DD1E /* Alamofire-umbrella.h */,
-				8EC7230A22AF2F2E3690236272C664FF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		AA053F877392C5511E8E7F0E788765D4 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				F4427E7A6D9E86C9D9F941E24BE707FC /* AFError.swift */,
-				24B061BD0D585BBFF30266846ABB3EB4 /* Alamofire.swift */,
-				98FBAE7887275537082782B2A6832913 /* DispatchQueue+Alamofire.swift */,
-				A0D3C0F8F7E363A10BC08674C3935241 /* MultipartFormData.swift */,
-				1266E3DB6E28BEB580AA56F7A4A06874 /* NetworkReachabilityManager.swift */,
-				942A960AD51F5130FEA7997BDF5EF8AB /* Notifications.swift */,
-				AE772145D58F3C7603114884966B765B /* ParameterEncoding.swift */,
-				67B2134C577C6F37355C134CAB4936E1 /* Request.swift */,
-				A1254299B9D7C6531C801504BB812911 /* Response.swift */,
-				7580DE66B9DD9D4654566B261A76A70F /* ResponseSerialization.swift */,
-				4D94492A2E83232B17D691DB51E6E88B /* Result.swift */,
-				36C521480A8D6C54D50B83BE94020FF3 /* ServerTrustPolicy.swift */,
-				4EAB2B4E9C2CE11DFA44A943956CDB4C /* SessionDelegate.swift */,
-				3FF54CBB81E8435BE391320BEB75A459 /* SessionManager.swift */,
-				3F4FBA4102F4E000AE8E3E98BA3E439B /* TaskDelegate.swift */,
-				CC47165DAFA3660629408EDAE9F49147 /* Timeline.swift */,
-				BE59D65653B0D8F673D31B19706BF645 /* Validation.swift */,
-				A708A720715656DDE9A8F00EF35BCB7B /* Support Files */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		BBC8E135D7FC065EE55F9718232C9569 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				49F8B62B4AB16C216CE9FAA97D5DC1B8 /* 122.png */,
-				6065329D02B639047B22307E5A7BC228 /* AddCommentCell.xib */,
-				C42A483F10E652783D217770A5729B43 /* CommentCell.xib */,
-				F1553D7D45E8DFCC96C22FC5E99D9ECC /* ContentWebViewCell.xib */,
-				FB8A16FC7AC207B733903D53E51107CC /* EmoticonCell.xib */,
-				2A72C9C1DA9D9A1356C97CF85D8468C2 /* facebook.png */,
-				D93B0C87187D3489FA704D221C73C73C /* images.png */,
-				3E3F102FBB45BC45F26C464B96C1C062 /* images-2.png */,
-				E914B4865C98BF36F15943CB1CCF2433 /* LoadMoreCell.xib */,
-				D8E774976E5DCDD25E8548F5F09BA06B /* Main.storyboard */,
-				9F47AAE9DCDD50EA24B9CE73588A3B8C /* MoreView.xib */,
-				050E9EA23E0F5E2B23F7207ACF900D89 /* MostPopularArticleCell.xib */,
-				CCA6F684C785F6AE4ACC70E01DB121BA /* non_secure.html */,
-				F82B9B42E32E42B55EE1AC6728AD1351 /* smile-amused.png */,
-				B48DFCED1108348CEF7F1F7A611D70AD /* smile-angry.png */,
-				45CFA142551E9D42D1823393A223216A /* smile-excited.png */,
-				21971E60FAC1D246062B5362C136EEF9 /* smile-happy.png */,
-				2392A11CFD40C51B7A501DE7FC6ACBA9 /* smile-indifferent.png */,
-				4F39614993E6DFF319C265059F08BD0F /* smile-sad-full.png */,
-				628E301C42C36BA6807BC5022858B996 /* Solid_gray.png */,
-				528E600F238A6FB9BB230B03D36FBE56 /* thumb-down.png */,
-				5F6CF320022B161D00F72E786D29A5F1 /* thumb-up.png */,
-				C6CAA2E11BFDA4049959D8448EA9C890 /* twitter.png */,
-				73F578010FCA3EDACC85BCDF366D9738 /* vuukle_logo.jpg */,
-				487CF4D14C603FE44D9697858703B7C7 /* WebViewCell.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C9924568F26DE1525EA3F14C55919A8A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				711B3AB0328C70657FD52227281940EA /* Info.plist */,
-				5EF798D1F5DCB52C3FE00A6BAF104A00 /* Vuukle.modulemap */,
-				99A1437DDB4AB6AC735D06FBD6267E9F /* Vuukle.xcconfig */,
-				E67C87CB8001312D47240AACBEE816D5 /* Vuukle-dummy.m */,
-				E00B3881DB7801B0F7CCF15F92C2F007 /* Vuukle-prefix.pch */,
-				229D2974B11295DA03C4977489211BDC /* Vuukle-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Vuukle";
-			sourceTree = "<group>";
-		};
-		CD4687CF1161C1119BBEDC207340E710 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF240DF50BDF50A33BC6F2EE1346540A /* AlamofireImage.modulemap */,
-				6BF4D688F0702E0E3C564E0A2A038D2C /* AlamofireImage.xcconfig */,
-				2D0AFC51B923FE1369E1F123BB49B870 /* AlamofireImage-dummy.m */,
-				7AD737A5944F13DA822F72605951BC17 /* AlamofireImage-prefix.pch */,
-				63A6E9AA207A1FEB3842A30716024E6C /* AlamofireImage-umbrella.h */,
-				AE73E104537E6D4E1D4DAE50ED138C60 /* Info.plist */,
+				A5209153DE97842937608C6C19A9A2B6 /* AlamofireImage.modulemap */,
+				E6F403E738FD34F452B10EA7C7A42E07 /* AlamofireImage.xcconfig */,
+				AA196439589FA2907579F6ED66D66A17 /* AlamofireImage-dummy.m */,
+				54B5CF92E6570A5E90652596D2D66D20 /* AlamofireImage-prefix.pch */,
+				A4D8B46EFA011230CC460BD1E1892EC9 /* AlamofireImage-umbrella.h */,
+				5733582AD200641AA09097412AAFD920 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AlamofireImage";
 			sourceTree = "<group>";
 		};
-		D54F51E0E619C95172EBFF80B301A94E /* Vuukle */ = {
+		A96E757C14B27E02D5D8D6605159B43F /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				7AF2D5F7D0C2B5862D364FBA6997841A /* AddCommentCell.swift */,
-				FDF79432AC0BD29EB82E4DD69893F248 /* AppDelegate.swift */,
-				DCE4C96C5D0C5910F64134DEDD61DE51 /* CellConstraintsConstructor.swift */,
-				08225A495703AB2ABB5A916DD77D82E5 /* CellConstructor.swift */,
-				B10D9ACE0AAF9635BB7307AFACACFC63 /* CommentCell.swift */,
-				A194C9C72D507F80A174127CA18D1B46 /* CommentForm.swift */,
-				D64A55214CDACD16B8F38D3934E49CFD /* CommentsBuilder.swift */,
-				9B16176956B29AE36E4ED4DAD2482FC0 /* CommentsFeed.swift */,
-				B74CD9D4157FA31B25939475CDE8A3E1 /* CommentViewController.swift */,
-				081782CD7DA6B6328454CCF94045F70B /* ContentWebViewCell.swift */,
-				D765BDF58190652A21527D8E087FF00E /* EmoteRating.swift */,
-				49FE76264C07C05CA6F23342C13ADF98 /* Emoticon.swift */,
-				989F236A58FB4CB6C84D90E8F005B35B /* EmoticonCell.swift */,
-				D96DDB1C96EA85140474D708D05E59C3 /* Global.swift */,
-				0848DA3DBB35BBF2A653956628C588F9 /* LoadMore.swift */,
-				A2A7E79A5C3204431110A7D5A5B90F1C /* LoadMoreCell.swift */,
-				D7C9E22CF306D93E360E217E6E47FEDC /* LocalCommentsConstructor.swift */,
-				6897E4A6F0C7F42DA26CEB67002AFD09 /* MoreView.swift */,
-				1C609BDB989FB06E8F918459E497B53D /* MostPopularArticle.swift */,
-				E5EB1B3876919FE4C3BAF8CFBE45A40D /* MostPopularArticleCell.swift */,
-				24F373848AEF7C3F8B5A2E21E74D3623 /* NetworkManager.swift */,
-				848730BAAA6CD8912CB468A2485A796D /* ParametersConstructor.swift */,
-				69BDD4E7F7C4E62891C049517A99758A /* ReplyForm.swift */,
-				0F5F4F08F19569DE731821D263143710 /* ResponseToComment.swift */,
-				532871D487BA9E965B0188E18034D26F /* ResponseToEmoteRating.swift */,
-				FA4ABC891DBE7865488FCF4D4B0F575F /* Saver.swift */,
-				D15119CB4EDECBA2CD40FD76A91324F8 /* TimeAgo.swift */,
-				9E2BE3B3777C49D5CD4D932392EAEABC /* TotalCommentsCount.swift */,
-				7FBD06D5937305A1EE612E290975D231 /* VuukleInfo.swift */,
-				AF9DDA8A1EA023B6FD72D147E37D29A6 /* WebView.swift */,
-				A1BC29A25AD73CD34B10C0998C020484 /* WebViewCell.swift */,
-				BBC8E135D7FC065EE55F9718232C9569 /* Resources */,
-				C9924568F26DE1525EA3F14C55919A8A /* Support Files */,
+				E82EB4BB7FA731D5997801375F244A7C /* AFError.swift */,
+				A2D8C8763DBE659BEB14B358ACAD5277 /* Alamofire.swift */,
+				D8A5C015D776134E05C06691D319796A /* DispatchQueue+Alamofire.swift */,
+				D6B9D398A97B3F05819AC4F1631A0990 /* MultipartFormData.swift */,
+				2D574D5C57BF83307E6D13AA9A1BF9FF /* NetworkReachabilityManager.swift */,
+				3C3CFD3518AAC53275E640409345EDBB /* Notifications.swift */,
+				24388C72778BD1F8B61FABAB5DD7ED39 /* ParameterEncoding.swift */,
+				4C68E619100F5DADDB86BEA63EB105A0 /* Request.swift */,
+				716886C8D20DCECBD47D9420DEADAC0D /* Response.swift */,
+				859208E6426C8E13364A318FFE07AFA2 /* ResponseSerialization.swift */,
+				89273DD9BF9EC8AE682D2C8954DDC2BB /* Result.swift */,
+				0291A8F939668D519D65E86087D6357F /* ServerTrustPolicy.swift */,
+				A29FC90C72A267182571E3F1A20F1440 /* SessionDelegate.swift */,
+				90B9A27309A29D9CB00A825B770BBD88 /* SessionManager.swift */,
+				FD71102660BB098DF736F73DCA1CFF72 /* TaskDelegate.swift */,
+				85C2F570FC39E21FE0B911A518A7F597 /* Timeline.swift */,
+				1291918DDFB4E2514B720BF90EA54E42 /* Validation.swift */,
+				0A51B05314D84A30605D02CB949FA616 /* Support Files */,
 			);
-			path = Vuukle;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		E9074B7BBF396FE017A9B74CFCAE8E03 /* Targets Support Files */ = {
@@ -627,9 +639,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5260FED7C7DA4522532A5537D31833DA /* Build configuration list for PBXNativeTarget "Vuukle" */;
 			buildPhases = (
-				D4441900F23B747932FDD9EA943356F8 /* Sources */,
+				7D766150D22153FC473C4F962E847A97 /* Sources */,
 				E517356423AEE857A2D0D70AE444E8B2 /* Frameworks */,
-				2AF55C0B7F75EFF7F36044597DBD7B31 /* Resources */,
+				277AD0CAA79F8B93F9A263B42E8C61B7 /* Resources */,
 				9D63E781167648296CBCCE14DB0450A9 /* Headers */,
 			);
 			buildRules = (
@@ -690,35 +702,37 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2AF55C0B7F75EFF7F36044597DBD7B31 /* Resources */ = {
+		277AD0CAA79F8B93F9A263B42E8C61B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C60DF06C4D9514E3E0AF98F3773EE59 /* 122.png in Resources */,
-				2326F9338463BB7DA7A6C713B4B09AF5 /* AddCommentCell.xib in Resources */,
-				7DEE2995D291320AFDAD89809E1B41D4 /* CommentCell.xib in Resources */,
-				5808316142A312D3911BA81232EE1863 /* ContentWebViewCell.xib in Resources */,
-				CB5BDB5B30BCA2064FB5F84ABDA085E6 /* EmoticonCell.xib in Resources */,
-				0D6845B8E344450E6758BC9F8BAF4412 /* facebook.png in Resources */,
-				74309307173FA52020806601F138B38B /* images-2.png in Resources */,
-				5F8312B9CB735A8237A29E4FFC91BD2C /* images.png in Resources */,
-				3C33FBF15691D720CD194BF3FF548DEA /* LoadMoreCell.xib in Resources */,
-				A17108079823EDA061AF1CAD68FC765C /* Main.storyboard in Resources */,
-				92FD55052C5A679BF47867DA55E293AC /* MoreView.xib in Resources */,
-				ACD881D97A77FC33A8AB5166BC973315 /* MostPopularArticleCell.xib in Resources */,
-				0A3A2DF6CC94825B092F895FC4E47F02 /* non_secure.html in Resources */,
-				43DF3FF82E3C7954C5458C6C2FF836E9 /* smile-amused.png in Resources */,
-				424D69DE5D2C0A4510BA98A1D27C67CA /* smile-angry.png in Resources */,
-				9511D41361330D3EA01CA77FA6392376 /* smile-excited.png in Resources */,
-				65B299C067DF1A8DBF597AF849F20FCA /* smile-happy.png in Resources */,
-				4EE81DD242C88F70E4A36F7657C3F11E /* smile-indifferent.png in Resources */,
-				39D70602768C7DD050C0E69EA123668C /* smile-sad-full.png in Resources */,
-				85C2091BD8EBEB14786936E52BECBD35 /* Solid_gray.png in Resources */,
-				84CCEE8AF5012694F81CE0F13361DC8D /* thumb-down.png in Resources */,
-				8792B35C7FD58D4244F1319375E85A5F /* thumb-up.png in Resources */,
-				EDDC637C677A2788AF6D737D14CBBC5C /* twitter.png in Resources */,
-				EAA561A34BFE125EF1966355A98F1C0A /* vuukle_logo.jpg in Resources */,
-				9D8EF5DB6D965089E1D87A0D88BF88C5 /* WebViewCell.xib in Resources */,
+				90C188365DF4A27D5A3799090497E6DE /* 122.png in Resources */,
+				06D54A9AABE526F2D3C81A47D8FC7930 /* AddCommentCell.xib in Resources */,
+				D42C2D6F535B7B8B7BAF1D30C61309AD /* CommentCell.xib in Resources */,
+				F6C396C75FD45C228006773CD8D11865 /* ContentWebViewCell.xib in Resources */,
+				59CC4D5D7DE3ED089E9CF3E8A9741F8B /* EmoticonCell.xib in Resources */,
+				C2020AD5940417D44CAF4EC3C3E07479 /* facebook.png in Resources */,
+				E4303A89F6D59DE4B9B65E96505CAC4C /* images-2.png in Resources */,
+				F0F34DA656D7533D96912103F606726A /* images.png in Resources */,
+				2459772D2F32301E93036C41A3D8828F /* LoadMoreCell.xib in Resources */,
+				94BC08D57633120968BF2DC787C900DE /* LoginCell.xib in Resources */,
+				292A3515AD65F35F508993E7F8B0D02D /* LoginView.xib in Resources */,
+				01136C261DFA2AF3D96D0F50F7F53D02 /* Main.storyboard in Resources */,
+				93E502B3F3AD1E56803BBB02F94ED01A /* MoreView.xib in Resources */,
+				85E2D2FFEF1ECBDD611096EF3129A277 /* MostPopularArticleCell.xib in Resources */,
+				826B4A877FBDE58E244B5A5B1E5FD0B1 /* non_secure.html in Resources */,
+				6072881193676C40257A88D7D90A6245 /* smile-amused.png in Resources */,
+				1401DCB36CF28A2E1DE00EBA731B5979 /* smile-angry.png in Resources */,
+				0EB2F61415F37A9EC00E7380CFF7AC91 /* smile-excited.png in Resources */,
+				5913309B0EC6DE4C06E6293FCA471E68 /* smile-happy.png in Resources */,
+				A7E4293DB7956278F190470ABFEE7B20 /* smile-indifferent.png in Resources */,
+				E5F9179C4F2819D36566E2FF8F77DCB3 /* smile-sad-full.png in Resources */,
+				5C281C2799BA1AB9809BC2A4904E1A5F /* Solid_gray.png in Resources */,
+				A0F3014CF11278C61D308D6A55B7B9B1 /* thumb-down.png in Resources */,
+				341C49B65C2CA0AC6291C6B3861A2656 /* thumb-up.png in Resources */,
+				F2A784B5CD3CC5200A64B34312B61BFE /* twitter.png in Resources */,
+				06A012BABCD35158F20B71E0AE2DB3E0 /* vuukle_logo.jpg in Resources */,
+				7FF8BD14EDFF9F210525D42B60C0A82A /* WebViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,42 +772,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4441900F23B747932FDD9EA943356F8 /* Sources */ = {
+		7D766150D22153FC473C4F962E847A97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D38A186919479D3C72F810AD110A495 /* AddCommentCell.swift in Sources */,
-				68B268BACE599CB712C129F910CF806B /* AppDelegate.swift in Sources */,
-				A97466FFB687692133D2E972830E8C99 /* CellConstraintsConstructor.swift in Sources */,
-				F1D97CB16D6BA23E1B7A337249DFFF0E /* CellConstructor.swift in Sources */,
-				C26767A67242207B203B4CB4B7C8C76C /* CommentCell.swift in Sources */,
-				BD709BDC546E14E464C1B5734496BD63 /* CommentForm.swift in Sources */,
-				056BD6E242BE65948DCD0A3CF1ADB3AE /* CommentsBuilder.swift in Sources */,
-				68D42958341F110CAFD1AEBE2A2ADB54 /* CommentsFeed.swift in Sources */,
-				BCBFBD52CDBB6765F38528541BB9D7C5 /* CommentViewController.swift in Sources */,
-				0E6C302625BEE1F4DC29A4EC4700528D /* ContentWebViewCell.swift in Sources */,
-				9324FEF1D254282D1A42250929D02DCE /* EmoteRating.swift in Sources */,
-				669AE6F50CC48CCE91E966AC2F966E55 /* Emoticon.swift in Sources */,
-				69D84D1AE7BF3EC53B82EC6255249615 /* EmoticonCell.swift in Sources */,
-				459DA8254FABB703A914CD92AC065AFD /* Global.swift in Sources */,
-				75CE1143044B5388A6BE5626E7B78ABC /* LoadMore.swift in Sources */,
-				00AFAB974374405D72A5B4CC934C1010 /* LoadMoreCell.swift in Sources */,
-				82ACC1F58F2E42DE9FBFA1B968529094 /* LocalCommentsConstructor.swift in Sources */,
-				444648D8C35C9562BB349F2F34AAAB1E /* MoreView.swift in Sources */,
-				8C674A9DCFF8F294EE83BB3810EB782E /* MostPopularArticle.swift in Sources */,
-				D854FB31D9E100E6C8D57041BE417012 /* MostPopularArticleCell.swift in Sources */,
-				F0C298A9D5D6E0B658F81E5AA4412969 /* NetworkManager.swift in Sources */,
-				BCBAF79C2EFCCC00E2144C4982FDEF27 /* ParametersConstructor.swift in Sources */,
-				51C42682C7331B551D2281096F1EB740 /* ReplyForm.swift in Sources */,
-				645D53FC1D77F35DB69E8974BD483157 /* ResponseToComment.swift in Sources */,
-				5440344B3A20741A1893E64EB0C7085D /* ResponseToEmoteRating.swift in Sources */,
-				F7A4688DB945897697ED9FE1DF0EF48A /* Saver.swift in Sources */,
-				AE3490550886C7813931463EE929942B /* TimeAgo.swift in Sources */,
-				10E5DCAAEEE2138097730336E77278F8 /* TotalCommentsCount.swift in Sources */,
-				0FC8EBE92E7D8D28CB1079C0024CA75D /* Vuukle-dummy.m in Sources */,
-				8E5D76DABB0F39005FE42215DA526FED /* VuukleInfo.swift in Sources */,
-				24D39F0B05795B78F2048D795F1ACBBD /* WebView.swift in Sources */,
-				8507B0D3FCA39C400EF201F72DD3D7AE /* WebViewCell.swift in Sources */,
+				55BA8383267D9918310FF7C26A7DAE46 /* AddCommentCell.swift in Sources */,
+				FD2FE8C2F2F42C68504086C95512F453 /* CellConstraintsConstructor.swift in Sources */,
+				7A4192348817A76688A2B03FCC731D33 /* CellConstructor.swift in Sources */,
+				881DE8A449A3BC71DEF0B1B7790CFF93 /* CommentCell.swift in Sources */,
+				1DC6B19C5836C78778111E1196C915AE /* CommentForm.swift in Sources */,
+				0AA378A774B3658AE7943ABFD5042DC2 /* CommentsBuilder.swift in Sources */,
+				F76AE893FFA122966BE52F27385338EF /* CommentsFeed.swift in Sources */,
+				D59787FA8C04938FAF59FFCF175F7866 /* CommentViewController.swift in Sources */,
+				9E51ED2BD2FEC7FA12334EF2F5D12E96 /* ContentWebViewCell.swift in Sources */,
+				E3A196F8855B0655A520D5E7AFDC8744 /* EmoteRating.swift in Sources */,
+				6B4CE3478E4E590880223057FBE7A1B7 /* Emoticon.swift in Sources */,
+				FFB2824DF4F93702ADEDDC1C35917596 /* EmoticonCell.swift in Sources */,
+				4AA01D7CBE26C42724ED07A07544CC4A /* Global.swift in Sources */,
+				C93EF0E1A39EC656640667BB6D38821C /* LoadMore.swift in Sources */,
+				FDBA208F78CEFF182A1EFAC96090A441 /* LoadMoreCell.swift in Sources */,
+				5AD1E900345A3E23DC5EC6B77258938B /* LocalCommentsConstructor.swift in Sources */,
+				465443FAF1FB922FD55AC41FAE41C00E /* LoginCell.swift in Sources */,
+				6D3578B3BD53BF364DBFA3336A11FF56 /* LoginForm.swift in Sources */,
+				65958FF5D7644B7D4F5A4B7A15A741CA /* LoginView.swift in Sources */,
+				50F7392230A2F48094122CC3853DC466 /* MoreView.swift in Sources */,
+				92133843ED34C50C4090895102C40E12 /* MostPopularArticle.swift in Sources */,
+				00F03A076AC35562C402455FEB0FE900 /* MostPopularArticleCell.swift in Sources */,
+				679409816886AD29641F1C831FE24E40 /* NetworkManager.swift in Sources */,
+				9C5F131F59EC522DBBAC2B1BA6D2E699 /* ParametersConstructor.swift in Sources */,
+				5AAF56B78C0C0C46B77D9F8224059EFA /* ReplyForm.swift in Sources */,
+				D8A89D2A279F45BC89C31F3D449AC88D /* ResponseToComment.swift in Sources */,
+				22956CC230E30556E6DC6154A1406C21 /* ResponseToEmoteRating.swift in Sources */,
+				C118C150EF134A83046CD84B192D2F59 /* Saver.swift in Sources */,
+				2A00B7A0DFCF2F9F2849A99481869609 /* TimeAgo.swift in Sources */,
+				7CA7783D3F16BFB90405BDE3C16DC070 /* TotalCommentsCount.swift in Sources */,
+				EE795AC7E390C25911294F443AA3D278 /* Vuukle-dummy.m in Sources */,
+				A56F96660836AD7406B2C5179D67D5A6 /* VuukleInfo.swift in Sources */,
+				EB271BF515BD7ABA796ECD574D68A77F /* WebView.swift in Sources */,
+				4A122BFDEC054BAEE12DB8C31B6B6969 /* WebViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,7 +911,7 @@
 		};
 		46AB04918043A377316E156A43A782AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BF4D688F0702E0E3C564E0A2A038D2C /* AlamofireImage.xcconfig */;
+			baseConfigurationReference = E6F403E738FD34F452B10EA7C7A42E07 /* AlamofireImage.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -972,7 +988,7 @@
 		};
 		7345AEDACA519EF795930BB8B41AF124 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99A1437DDB4AB6AC735D06FBD6267E9F /* Vuukle.xcconfig */;
+			baseConfigurationReference = 7492FEF7FAFE95173BF8004DF823B742 /* Vuukle.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1005,7 +1021,7 @@
 		};
 		7F93EF234CD87F7448472375CC1EFA96 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53590D922AC1F40FCB4D117A994008C /* Alamofire.xcconfig */;
+			baseConfigurationReference = E09FCEE10092226A953570F29E0CDD48 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1038,7 +1054,7 @@
 		};
 		86196AE4E38E4ED5CBD799592F139D5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99A1437DDB4AB6AC735D06FBD6267E9F /* Vuukle.xcconfig */;
+			baseConfigurationReference = 7492FEF7FAFE95173BF8004DF823B742 /* Vuukle.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1146,7 +1162,7 @@
 		};
 		DDA5A606A0B7062DEA5E47CD9FA65A3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53590D922AC1F40FCB4D117A994008C /* Alamofire.xcconfig */;
+			baseConfigurationReference = E09FCEE10092226A953570F29E0CDD48 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1178,7 +1194,7 @@
 		};
 		EA2CB96A0B24553AE19E5B34FBAE12A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BF4D688F0702E0E3C564E0A2A038D2C /* AlamofireImage.xcconfig */;
+			baseConfigurationReference = E6F403E738FD34F452B10EA7C7A42E07 /* AlamofireImage.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

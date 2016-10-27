@@ -4,7 +4,7 @@
     "ios": "9.0"
   },
   "summary": "Vuukle.com",
-  "version": "0.9.8",
+  "version": "0.9.88",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -15,7 +15,7 @@
   "homepage": "https://github.com/vuukle/vuukle_iOS_SDK",
   "source": {
     "git": "https://github.com/vuukle/vuukle_iOS_SDK.git",
-    "tag": "0.9.8"
+    "tag": "0.9.88"
   },
   "frameworks": "Social",
   "dependencies": {

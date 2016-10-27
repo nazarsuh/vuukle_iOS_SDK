@@ -76,7 +76,7 @@ open class VuukleCommentsBuilder : NSObject {
      
      */
     open func setVuukleHost(_ host : String) -> VuukleCommentsBuilder{
-        Global.host = host
+        Global.host = host.lowercased()
         return self
     }
     
@@ -265,4 +265,12 @@ open class VuukleCommentsBuilder : NSObject {
         view.addSubview(vc.view)
 }
 
+    open static func getHeight() -> CGFloat{
+        return VuukleInfo.commentsHeight
+    }
+    
+    open static func getCommentsCount() -> Int{
+        return VuukleInfo.getCommentsCount()
+    }
+    
 }

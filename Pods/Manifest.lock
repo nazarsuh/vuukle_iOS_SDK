@@ -2,7 +2,7 @@ PODS:
   - Alamofire (4.0.1)
   - AlamofireImage (3.1.0):
     - Alamofire (~> 4.0)
-  - Vuukle (0.9.8):
+  - Vuukle (0.9.88):
     - Alamofire (~> 4.0)
     - AlamofireImage (~> 3.0)
 
@@ -16,14 +16,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Vuukle:
-    :commit: 2f58308bc12b5ccc50790437155f59a79e8ff741
+    :commit: a86a71d0d2815a99d5b615e8e1e117a29fb5ca87
     :git: https://github.com/b13markus/Vuukle_comments_test
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
-  Vuukle: 8b8b617384891462a542b35a1e2665b6dbec0ffa
+  Vuukle: 6a6cb0e8affbe54c30f1b8f39eb3ec6991b5d241
 
-PODFILE CHECKSUM: c9b8c8eb5182b895b846879e565fb006eda91e17
+PODFILE CHECKSUM: 9f0264fba378565029df1355bf5ef881e5547abf
 
 COCOAPODS: 1.1.0.rc.3

@@ -37,7 +37,7 @@ class NetworkManager {
     //MARK: Get Comment Feed
     
     func getCommentsFeed(_ completion: @escaping ([CommentsFeed]?, NSError?) -> Void) {
-        
+        print("1499 \(Global.baseURL)getCommentFeed?host=\(Global.host)&article_id=\(Global.article_id)&api_key=\(Global.api_key)&secret_key=\(Global.secret_key)&time_zone=\(Global.time_zone)&from_count=0&to_count=\(Global.countLoadCommentsInPagination)")
         Alamofire.request("\(Global.baseURL)getCommentFeed?host=\(Global.host)&article_id=\(Global.article_id)&api_key=\(Global.api_key)&secret_key=\(Global.secret_key)&time_zone=\(Global.time_zone)&from_count=0&to_count=\(Global.countLoadCommentsInPagination)")
             .responseJSON { response in
                 
@@ -81,9 +81,9 @@ class NetworkManager {
                     let respon = ResponseToComment()
                     respon.result = self.jsonArray!["result"] as? String
                     respon.comment_id = self.jsonArray!["comment_id"] as? String
-                    respon.isModeration = self.jsonArray!["isModeration"] as? String
-                    
-                    
+                    respon.isModeration = self.jsonArray!["isModeration"] as! String
+                    let notOptionalResponse = respon.isModeration!
+                    respon.isModeration = notOptionalResponse
                     completion(respon , nil)
                     print(respon)
                     
@@ -100,7 +100,6 @@ class NetworkManager {
         
        // return Alamofire.request(imageURL as! NSURL as! URLRequestConvertible).responseImage { response in
             return Alamofire.request(imageURL).responseImage { response in
-                print("1488")
                 if let image = response.result.value {
                     completion(image)
                 } else {
@@ -124,6 +123,16 @@ class NetworkManager {
                     
                     let respon = ResponseToComment()
                     respon.result = self.jsonArray!["result"] as? String
+                    let res = self.jsonArray?["isModeration"]
+                    print("1433 \(res)")
+                    respon.isModeration = self.jsonArray!["isModeration"] as? String
+                    if let notOptionalResponse = respon.isModeration {
+                        respon.isModeration = notOptionalResponse
+                    } else {
+                        respon.isModeration = "false"
+                    }
+                    completion(respon , nil)
+                    print(respon)
                     
                     completion(respon , nil)
                     print("ID мого ріплая :\(respon.result!)")
@@ -140,6 +149,8 @@ class NetworkManager {
         let url = "\(Global.baseURL)setCommentVote?host=\(Global.host)&article_id=\(Global.article_id)&api_key=\(Global.api_key)&secret_key=\(Global.secret_key)&comment_id=\(comment_id)&up_down=\(up_down)&name=\(name)&email=\(email)"
         
         let newUrl = url.replacingOccurrences(of: " ", with: "")
+        
+        print("1288 \(newUrl)")
         
         Alamofire.request( newUrl)
             .responseJSON { response in
@@ -211,7 +222,8 @@ class NetworkManager {
     
     func setRaring(_ article_id : String ,emote : Int,completion : @escaping (ResponseToEmoteRating) -> Void) {
         
-        print("\(Global.baseURL)setEmoteRating?host=\(Global.host)&api_key=\(Global.api_key)&article_id=\(article_id)&article_title=\(Global.article_title)&article_image=\(Global.article_image)&emote=\(emote)")
+        print("1288 \(Global.baseURL)setEmoteRating?host=\(Global.host)&api_key=\(Global.api_key)&article_id=\(article_id)&article_title=\(Global.article_title)&article_image=\(Global.article_image)&emote=\(emote)")
+        
         Alamofire.request("\(Global.baseURL)setEmoteRating?host=\(Global.host)&api_key=\(Global.api_key)&article_id=\(article_id)&article_title=\(Global.article_title)&article_image=\(Global.article_image)&emote=\(emote)&url=\(Global.articleUrl)")
             .responseJSON { response in
                 
@@ -245,7 +257,7 @@ class NetworkManager {
                     
                     respon.comments = self.jsonArray!["comments"] as? Int
                     print(respon)
-                    print("TIP")
+                    VuukleInfo.totalCommentsCount = respon.comments!
                     completion(respon)
                     
                 } else {
@@ -304,5 +316,29 @@ class NetworkManager {
                     completion(nil,response.result.error as NSError?)
                 }
             }
+    }
+    
+    func reportComment(commentID: String, name: String, email: String, completion: @escaping(Bool?, NSError?) -> Void) {
+        var result = false
+        
+        print("1288 \(Global.baseURL)flagCommentOrReply?comment_id=\(commentID)&api_key=\(Global.api_key)&article_id=\(Global.article_id)&resource_id=\(Global.resource_id)&name=\(name)&email=\(email)")
+        
+        Alamofire.request("\(Global.baseURL)flagCommentOrReply?comment_id=\(commentID)&api_key=\(Global.api_key)&article_id=\(Global.article_id)&resource_id=\(Global.resource_id)&name=\(name)&email=\(email)")
+            .responseJSON { response in
+                if let JSON = response.result.value {
+                    self.jsonArray = JSON as? NSDictionary
+                    print("\(self.jsonArray!["result"])")
+                    let respon = self.jsonArray!["result"] as! String
+                    
+                    if respon == "true" {
+                        completion(true, nil)
+                    } else {
+                        completion(false , nil)
+                    }
+                } else {
+                    print("Status cod = \(response.response?.statusCode)")
+                    completion(false, response.result.error as NSError?)
+                }
+        }
     }
 }

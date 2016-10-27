@@ -6,7 +6,7 @@
         target ‘VuukleNestedCommentsExample’ do
         use_frameworks!
 
-        pod ‘Vuukle’, :git => 'https://github.com/b13markus/Vuukle_comments_test', :branch => ‘swift_3’
+        pod ‘Vuukle’, :git => 'https://github.com/vuukle/vuukle_iOS_SDK.git', :branch => ‘swift_3’
 
     end
 

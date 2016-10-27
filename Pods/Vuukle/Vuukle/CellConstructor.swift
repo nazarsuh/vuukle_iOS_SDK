@@ -66,22 +66,21 @@ open class  CellConstructor {
             cell.countFifthEmoticonLabel.text = "\(Global.fifthEmoticonVotesCount)" ?? "0"
             cell.countSixthEmoticonLabel.text = "\(Global.sixthEmoticonVotesCount)" ?? "0"
             
-            cell.firstEmoticonLabel.text = "\(ParametersConstructor.sharedInstance.setRatePercent(Global.votes.first, second: Global.votes.second, thirt: Global.votes.third, fourth: Global.votes.fourth, fifth: Global.votes.fifth, sixt: Global.votes.sixth, element: Global.votes.first))%" ?? "0%"
-            cell.secondEmoticonLabel.text = "\(ParametersConstructor.sharedInstance.setRatePercent(Global.votes.first, second: Global.votes.second, thirt: Global.votes.third, fourth: Global.votes.fourth, fifth: Global.votes.fifth, sixt: Global.votes.sixth, element: Global.votes.second))%" ?? "0%"
-            cell.thirdEmoticonLabel.text = "\(ParametersConstructor.sharedInstance.setRatePercent(Global.votes.first, second: Global.votes.second, thirt: Global.votes.third, fourth: Global.votes.fourth, fifth: Global.votes.fifth, sixt: Global.votes.sixth, element: Global.votes.third))%" ?? "0%"
-            cell.fourthEmoticonLabel.text = "\(ParametersConstructor.sharedInstance.setRatePercent(Global.votes.first, second: Global.votes.second, thirt: Global.votes.third, fourth: Global.votes.fourth, fifth: Global.votes.fifth, sixt: Global.votes.sixth, element: Global.votes.fourth))%" ?? "0%"
-            cell.fifthEmoticonLabel.text = "\(ParametersConstructor.sharedInstance.setRatePercent(Global.votes.first, second: Global.votes.second, thirt: Global.votes.third, fourth: Global.votes.fourth, fifth: Global.votes.fifth, sixt: Global.votes.sixth, element: Global.votes.fifth))%" ?? "0%"
-            cell.sixthEmoticonLabel.text = "\(ParametersConstructor.sharedInstance.setRatePercent(Global.votes.first, second: Global.votes.second, thirt: Global.votes.third, fourth: Global.votes.fourth, fifth: Global.votes.fifth, sixt: Global.votes.sixth, element: Global.votes.sixth))%" ?? "0%"
+            let count: [Int] = [Global.firstEmoticonVotesCount, Global.secondEmoticonVotesCount, Global.thirdEmoticonVotesCount, Global.fourthEmoticonVotesCount, Global.fifthEmoticonVotesCount, Global.sixthEmoticonVotesCount]
+            
+            let percentage: [Int] = ParametersConstructor.sharedInstance.getPercentage(count)
+            
+            cell.firstEmoticonLabel.text = "\(percentage[0])%" ?? "0%"
+            cell.secondEmoticonLabel.text = "\(percentage[1])%" ?? "0%"
+            cell.thirdEmoticonLabel.text = "\(percentage[2])%" ?? "0%"
+            cell.fourthEmoticonLabel.text = "\(percentage[3])%" ?? "0%"
+            cell.fifthEmoticonLabel.text = "\(percentage[4])%" ?? "0%"
+            cell.sixthEmoticonLabel.text = "\(percentage[5])%" ?? "0%"
             
         }
         
         if !Global.showEmoticonCell {
-            cell.countFirstEmoticonLabel.isHidden = true
-            cell.countSecondEmoticonLabel.isHidden = true
-            cell.countThirdEmoticonLabel.isHidden = true
-            cell.countFourthEmoticonLabel.isHidden = true
-            cell.countFifthEmoticonLabel.isHidden = true
-            cell.countSixthEmoticonLabel.isHidden = true
+            cell.isHidden = true
         }
         
         return cell
@@ -145,6 +144,10 @@ open class  CellConstructor {
         return cell
     }
     
+    func returnLoginCell (_ cell : LoginCell, object: LoginForm) -> LoginCell {
+        return cell
+    }
+    
     func returnReplyCell (_ cell : CommentCell ,comment : CommentsFeed , date : Date ,newComment : String ,newName : String ) -> CommentCell {
         
         cell.hideProgress()
@@ -199,28 +202,44 @@ open class  CellConstructor {
     func returnAddCommentCellForComment(_ cell : AddCommentCell) -> AddCommentCell{
         
         cell.hideProgress()
+        cell.totalCount.isHidden = false
         
         var cell = CellConstraintsConstructor.sharedInstance.setAddCommentCellConstraints(cell)
-        if self.defaults.object(forKey: "name") as? String != nil {
+        if self.defaults.object(forKey: "name") as? String != nil && self.defaults.object(forKey: "name") as? String != ""{
+            let lname = self.defaults.object(forKey: "name") as! String
+            let newline = lname.replacingOccurrences(of: "%20", with: " ")
+            cell.nameTextField.isHidden = true
+            cell.greetingLabel.isHidden = false
+            cell.greetingLabel.text = "Welcome, \(newline)"
+            cell.nameTextField.text = lname
+            cell.nameTextField.isEnabled = false
+            cell.backgroundHeight.constant = 230
             cell.nameTextField.text = self.defaults.object(forKey: "name") as? String
             cell.nameTextField.isEnabled = false
             cell.nameTextField.isSelected = false
             cell.logOut.isHidden = false
         } else {
+            cell.backgroundHeight.constant = 285
+            cell.greetingLabel.isHidden = true
             cell.logOut.isHidden = true
+            cell.nameTextField.isHidden = false
             cell.nameTextField.isEnabled = true
             cell.nameTextField.isSelected = true
+            cell.nameTextField.text = ""
         }
         
-        if self.defaults.object(forKey: "email") as? String != nil {
+        if self.defaults.object(forKey: "email") as? String != nil && self.defaults.object(forKey: "email") as? String != "" {
+            cell.emailTextField.isHidden = true
             cell.emailTextField.text = self.defaults.object(forKey: "email") as? String
             cell.emailTextField.isEnabled = false
             cell.emailTextField.isSelected = false
             cell.logOut.isHidden = false
         } else{
             cell.logOut.isHidden = true
+            cell.emailTextField.isHidden = false
             cell.emailTextField.isEnabled = true
             cell.emailTextField.isSelected = true
+            cell.emailTextField.text = ""
         }
 
         
@@ -240,18 +259,28 @@ open class  CellConstructor {
         
         cell.hideProgress()
         var cell = CellConstraintsConstructor.sharedInstance.setAddCommentCellForReplyConstraints(cell)
-        if let lname = self.defaults.object(forKey: "name") as? String {
+        if self.defaults.object(forKey: "name") as? String != nil && self.defaults.object(forKey: "name") as? String != "" {
+            let lname = self.defaults.object(forKey: "name") as! String
+            let newline = lname.replacingOccurrences(of: "%20", with: " ")
+
+            cell.nameTextField.isHidden = true
+            cell.greetingLabel.text = "Welcome, \(newline)"
             cell.nameTextField.text = lname
             cell.nameTextField.isEnabled = false
-        } else if self.defaults.object(forKey: "name") == nil{
+            cell.backgroundHeight.constant = 218
+        } else {
+            cell.backgroundHeight.constant = 268
+            cell.greetingLabel.isHidden = true
             cell.nameTextField.text = ""
             cell.nameTextField.isEnabled = true
         }
-        if let lemail = self.defaults.object(forKey: "email") as? String {
+        if self.defaults.object(forKey: "email") as? String != nil && self.defaults.object(forKey: "email") as? String != "" {
+            let lemail = self.defaults.object(forKey: "email") as! String!
+            cell.emailTextField.isHidden = true
             cell.emailTextField.text = lemail
             cell.logOut.isHidden = true
             cell.emailTextField.isEnabled = false
-        } else if self.defaults.object(forKey: "email") == nil {
+        } else {
             cell.emailTextField.text = ""
             cell.logOut.isHidden = true
             cell.emailTextField.isEnabled = true
@@ -321,6 +350,11 @@ open class  CellConstructor {
             let objectForcell : MostPopularArticle = object as! MostPopularArticle
             var cell = tableView.dequeueReusableCell(withIdentifier: "MostPopularArticleCell") as! MostPopularArticleCell
             cell = returnMostPopularArticleCell(cell, object: object as! MostPopularArticle)
+            return cell
+        } else if object is LoginForm {
+            let objectForcell : LoginForm = object as! LoginForm
+            var cell = tableView.dequeueReusableCell(withIdentifier: "LoginCell") as! LoginCell
+            cell = returnLoginCell(cell, object: object as! LoginForm)
             return cell
         }
         return cell

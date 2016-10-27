@@ -25,13 +25,13 @@ class ParametersConstructor  {
                 allFill = false
             }
         } else if (name == "") || (name == " ") || checkStringForSpaces(string: name, indexSimbol: 0) == false{
-            showAlert("Please enter a name!", message: "")
+            showAlert("Please enter your name", message: "")
             allFill = false
         } else if email == ""{
-            showAlert("Please enter a email!", message: "")
+            showAlert("Please enter your email", message: "")
             allFill = false
         } else if ((comment == "Please write a comment...") || (comment == "") || (comment.isEmpty) || (comment == " ")) || (checkStringForSpaces(string: comment, indexSimbol: 0) == false) {
-            showAlert("Please enter a comment!", message: "")
+            showAlert("Please enter the comment", message: "")
             allFill = false
         }
         return allFill
@@ -149,6 +149,7 @@ class ParametersConstructor  {
         Global.sixthEmoticonVotesCount = data.sixth
         Global.votes = data
         
+        
     }
     
     func checkStringForSpaces(string : String , indexSimbol : Int) -> Bool {
@@ -163,4 +164,41 @@ class ParametersConstructor  {
         return result
     }
     
+    func getPercentage(_ input: [Int]) -> [Int] {
+        var output: [Int] = []
+        var sum = 0
+        for value in input {
+            if value > 0 {
+                sum += value
+            }
+        }
+        if sum == 0 { return [0] }
+        
+        for i in 0..<input.count {
+            output.append(input[i] * 100 / sum)
+        }
+        
+        return output
+    }
+    
+    func getUserInfo() -> [String:String] {
+        var resultDictionary: [String:String] = ["email":"", "name":"", "isLoggedIn":"false"]
+        if self.defaults.object(forKey: "email") as? String != nil && self.defaults.object(forKey: "email") as? String != "" && self.defaults.object(forKey: "name") as? String != nil && self.defaults.object(forKey: "name") as? String != "" {
+            let name = self.defaults.object(forKey: "name") as! String
+            let email = self.defaults.object(forKey: "email") as! String
+            resultDictionary.updateValue("true", forKey: "isLoggedIn")
+            resultDictionary.updateValue(name, forKey: "name")
+            resultDictionary.updateValue(email, forKey: "email")
+        }
+        return resultDictionary
+    }
+    
 }
+
+
+
+
+
+
+
+

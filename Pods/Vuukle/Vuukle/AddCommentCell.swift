@@ -28,22 +28,26 @@ class AddCommentCell: UITableViewCell , UITextViewDelegate , UITextFieldDelegate
     
     @IBOutlet weak var totalCount: UILabel!
     
+    @IBOutlet weak var greetingLabel: UILabel!
+    
     @IBOutlet weak var totalCountHeight: NSLayoutConstraint!
     
     @IBOutlet weak var logOutButtonHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var backgroundHeight: NSLayoutConstraint!
     
     @IBOutlet weak var logOut: UIButton!
     
     @IBAction func postButton(sender: AnyObject) {
         
-        if self.defaults.object(forKey: "name") as? String == nil {
+        if self.defaults.object(forKey: "name") as? String == nil || self.defaults.object(forKey: "name") as? String == "" {
             self.defaults.set("\(nameTextField.text!)", forKey: "name")
         } else {
             self.defaults.removeObject(forKey: "name")
             self.defaults.set("\(nameTextField.text!)", forKey: "name")
         }
         
-        if self.defaults.object(forKey: "email") as? String == nil {
+        if self.defaults.object(forKey: "email") as? String == nil || self.defaults.object(forKey: "email") as? String == "" {
             self.defaults.set("\(emailTextField.text!)", forKey: "email")
         } else {
             
